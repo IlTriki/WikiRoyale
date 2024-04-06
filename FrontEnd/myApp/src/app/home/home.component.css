@@ -23,8 +23,6 @@ section {
 }
 
 .bouton-rond {
-    display: inline-block;
-    border: none;
     border-radius: 8px;
     background-color: #f4cf6b; 
     color: #0c3351; 
@@ -33,9 +31,7 @@ section {
     font-weight: bold;
     text-transform: uppercase; 
     cursor: pointer;
-    outline: none; 
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
-    transition: background-color 0.3s ease, transform 0.2s ease;
   }
   
   .bouton-rond:hover {

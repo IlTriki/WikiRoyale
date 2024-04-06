@@ -1,0 +1,9 @@
+<div class="container">
+    <img src="{{ card.iconUrls.medium}}" alt="{{card.name}} image" class="image">
+    <div class="overlay" *ngIf="card.iconUrls.evolutionMedium">
+        <img src="{{ card.iconUrls.evolutionMedium}}" alt="{{ card.name }} image" class="evolution">
+    </div>
+</div>
+<div class="details">
+    <p> {{ card.name }} </p>
+</div>

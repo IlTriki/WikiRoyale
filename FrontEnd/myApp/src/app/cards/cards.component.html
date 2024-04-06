@@ -1,0 +1,26 @@
+<div class="bg-image">
+    <section>
+        <a class="title" [routerLink]="['/home']">
+            <h1>
+                Wiki <span class="yellow">Royale</span>
+            </h1>
+            <img src="../../assets/images/logo.webp" alt="">
+        </a>        
+    </section>
+    <section>
+        <div *ngFor="let card of cards">
+            <div class="container">
+                <img src="{{ card.iconUrls.medium}}" alt="{{card.name}}" class="image">
+                <div class="overlay" *ngIf="card.iconUrls.evolutionMedium">
+                    <img src="{{ card.iconUrls.evolutionMedium}}" alt="{{ card.name }}" class="evolution">
+                </div>
+            </div>
+            <div class="details">
+                <p> {{ card.name }} </p>
+                <button class="bouton-rond" mat-fab extended [routerLink]="['/cards', card.name]">
+                    Details
+                </button>
+            </div>
+        </div>
+    </section>
+</div>
