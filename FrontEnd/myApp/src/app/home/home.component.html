@@ -1,5 +1,5 @@
-<body id="back">
-    <section>
+<!-- <body id="back">-->
+    <section id="back">
     <div id="titre">WikiRoyale</div>
     <div id="presentation">
         <p>Bienvenue sur WikiRoyale, votre destination ultime pour tout ce qui concerne Clash Royale ! </p>
@@ -7,23 +7,26 @@
         <p>Plongez dans l'univers passionnant de Clash Royale et devenez un expert en un rien de temps !</p>
     </div>
     <div>
-        <button class="bouton-rond" mat-fab extended>
+        <button class="bouton-rond" mat-fab extended [routerLink]="['/description']">
             Description
         </button>    
     </div>
     <div>
-        <button class="bouton-rond" mat-fab extended>
+        <button class="bouton-rond" mat-fab extended [routerLink]="['/map']">
+            Détails de la map
+        </button>   
+    </div>
+    <div>
+        <button class="bouton-rond" mat-fab extended [routerLink]="['/emote']">
             Les emotes
         </button>   
     </div>
     <div>
-        <button class="bouton-rond" mat-fab extended>
-            Détails de la map
+        <button class="bouton-rond" mat-fab extended [routerLink]="['/card']">
+            Les cartes
         </button>   
-    </div>
-   
+    </div>   
     </section>
 
-</body>
-
+<!--</body> si je mets ça ça remplit tout le fond de la page mais ça fait bugger le site-->
 

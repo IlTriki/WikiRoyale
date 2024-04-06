@@ -7,7 +7,9 @@ import { HomeComponent } from './home/home.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatCardModule } from '@angular/material/card';
-import { MatIconModule } from '@angular/material/icon'
+import { MatIconModule } from '@angular/material/icon';
+import { CardComponent } from './card/card.component';
+import { EmoteComponent } from './emote/emote.component'
 
 
 
@@ -15,6 +17,8 @@ import { MatIconModule } from '@angular/material/icon'
   declarations: [
     AppComponent,
     HomeComponent,
+    CardComponent,
+    EmoteComponent,
   ],
   imports: [
     BrowserModule,
