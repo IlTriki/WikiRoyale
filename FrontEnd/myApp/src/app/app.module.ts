@@ -9,8 +9,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CardsComponent } from './cards/cards.component';
-import { EmoteComponent } from './emote/emote.component';
+import { EmotesComponent } from './emotes/emotes.component';
 import { HomeComponent } from './home/home.component';
+import { DescriptionComponent } from './description/description.component';
 
 
 
@@ -20,7 +21,8 @@ import { HomeComponent } from './home/home.component';
     AppComponent,
     HomeComponent,
     CardsComponent,
-    EmoteComponent,
+    EmotesComponent,
+    DescriptionComponent,
   ],
   imports: [
     BrowserModule,
