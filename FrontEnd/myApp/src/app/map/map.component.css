@@ -1,0 +1,134 @@
+@font-face {
+    font-family: 'Royale';
+    src: url('../../assets/fonts/You_Blockhead.ttf') format('truetype');
+}
+
+.title {
+    background-color: transparent;
+    text-align: center;
+    font-size: 300%;
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.title img {
+    width: 35%;
+    height: auto;
+}
+
+@media (max-width: 870px) {
+    .title img {
+        display: none;
+    }
+
+    .overlay{
+        animation : fade 3s infinite alternate;
+    }
+
+    @keyframes fade {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+}
+
+
+section{
+    margin: 2%;
+}
+
+
+.container {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    max-width: 150px;
+}
+
+.image {
+    display: block;
+    width: 80%;
+    height: auto;
+}
+
+
+p, h1, h2 {
+    font-family: 'Royale';
+    color: white;
+}
+
+p {
+    max-width: 150px;
+    text-align: center;
+}
+
+.yellow {
+    color: #FFD700;
+}
+
+
+#map {
+    border: 3px solid black;
+}
+
+.text-bottom-right,
+.text-top-right,
+.text-middle-left,
+.text-bottom-left,
+.text-timer {
+    position: absolute;
+}
+
+.text-bottom-right {
+    bottom: -40%;
+    right: 5%;
+}
+
+.text-bottom-right p {
+    max-width: 600px;
+}
+
+.text-bottom-left {
+    bottom: -40%;
+    left: 8%;
+}
+
+.text-bottom-left p {
+    max-width: 600px;
+}
+
+.text-top-right p {
+    max-width: 600px;
+}
+
+.text-top-right {
+    top: 70%;
+    right: 5%;
+}
+
+.text-timer {
+    top: 57%;
+    right: 15%;
+}
+
+.text-timer p {
+    max-width: 600px;
+}
+
+
+.text-middle-left p {
+    max-width: 600px;
+}
+
+
+.text-middle-left {
+    top: 95%;
+    left: 5%;
+    transform: translateY(-50%);
+}

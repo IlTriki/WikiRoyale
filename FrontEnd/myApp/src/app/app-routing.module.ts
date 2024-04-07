@@ -4,6 +4,7 @@ import { CardsComponent } from './cards/cards.component';
 import { DescriptionComponent } from './description/description.component';
 import { EmotesComponent } from './emotes/emotes.component';
 import { HomeComponent } from './home/home.component';
+import { MapComponent } from './map/map.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
@@ -14,7 +15,8 @@ const routes: Routes = [
   { path: 'cards/type/:type', component: CardsComponent },
   { path: 'cards/:name', component: CardsComponent },
   { path: 'emotes', component: EmotesComponent },
-  { path: 'description', component: DescriptionComponent }
+  { path: 'description', component: DescriptionComponent },
+  { path: 'map', component: MapComponent }
 ];
 
 @NgModule({
