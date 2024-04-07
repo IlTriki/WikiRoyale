@@ -11,7 +11,10 @@ export const environment = {
       endpoints: {
         allCards: '/cards',
         randomCard: '/cards/random',
-        cardByName: '/cards/name'
+        cardByName: '/cards/name',
+        allEmotes: '/emotes',
+        randomEmote: '/emotes/random',
+        emoteById: '/emotes/id',
       }
     }
   };

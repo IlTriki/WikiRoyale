@@ -10,13 +10,7 @@
     <section>
         <div *ngFor="let emote of emotes">
             <div class="container">
-                <img src="{{ emote.iconUrls.medium}}" alt="{{emote.id}}" class="image">
-            </div>
-            <div class="details">
-                <p> {{ emote.id }} </p>
-                <button class="bouton-rond" mat-fab extended [routerLink]="['/emotes', emote.id]">
-                    Details
-                </button>
+                <img src="{{ emote.iconUrls.medium }}" alt="{{emote.id}}" class="image">
             </div>
         </div>
     </section>

@@ -45,15 +45,4 @@ export class EmotesController {
     return this._emotesService.findOne(id.toString());
     }
 
-    /**
-     * Handler to answer to /people route
-     *
-     * @param createEmoteDto
-     *
-     * @returns Observable<Emote>
-     */
-    // @Post()
-    // create(@Body() createEmoteDto: createEmoteDto): Observable<Emote> {
-    // return this._emotesService.create(createEmoteDto);
-    // }
 }
