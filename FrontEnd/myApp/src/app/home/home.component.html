@@ -1,7 +1,16 @@
 <!-- <body id="back">-->
+    <div class="bg-image">
+        <section>
+            <a class="title" [routerLink]="['/home']">
+                <h1>
+                    Wiki <span class="yellow">Royale</span>
+                </h1>
+                <img src="../../assets/images/logo.webp" alt="">
+            </a>        
+        </section>
+    </div>
 
     <section id="back">
-    <div id="titre">WikiRoyale</div>
     <div id="presentation">
         <p>Bienvenue sur WikiRoyale, votre destination ultime pour tout ce qui concerne Clash Royale ! </p>
         <p>Découvrez ici des descriptions détaillées, des émotes hilarantes, une galerie complète de cartes et des informations approfondies sur chacune d'entre elles.</p>
@@ -18,7 +27,7 @@
         </button>   
     </div>
     <div>
-        <button class="bouton-rond" mat-fab extended [routerLink]="['/emote']">
+        <button class="bouton-rond" mat-fab extended [routerLink]="['/emotes']">
             Les emotes
         </button>   
     </div>

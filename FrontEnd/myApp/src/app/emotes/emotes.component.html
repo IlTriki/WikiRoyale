@@ -1,0 +1,23 @@
+<div class="bg-image">
+    <section>
+        <a class="title" [routerLink]="['/home']">
+            <h1>
+                Wiki <span class="yellow">Royale</span>
+            </h1>
+            <img src="../../assets/images/logo.webp" alt="">
+        </a>        
+    </section>
+    <section>
+        <div *ngFor="let emote of emotes">
+            <div class="container">
+                <img src="{{ emote.iconUrls.medium}}" alt="{{emote.id}}" class="image">
+            </div>
+            <div class="details">
+                <p> {{ emote.id }} </p>
+                <button class="bouton-rond" mat-fab extended [routerLink]="['/emotes', emote.id]">
+                    Details
+                </button>
+            </div>
+        </div>
+    </section>
+</div>

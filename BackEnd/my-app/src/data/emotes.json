@@ -1,0 +1,29 @@
+
+{
+    "items": [
+      {
+        "id": 1,
+        "iconUrls": {
+          "medium": "https://static.wikia.nocookie.net/clashroyale/images/f/fa/Laughing_King.png/revision/latest?cb=20230915211717"
+        }
+      },
+      {
+        "id": 2,
+        "iconUrls": {
+          "medium": "https://static.wikia.nocookie.net/clashroyale/images/1/1a/Thumbs-Up_King.png/revision/latest?cb=20230915211745"
+        }
+      },
+      {
+        "id": 3,
+        "iconUrls": {
+          "medium": "https://static.wikia.nocookie.net/clashroyale/images/a/af/Crying_King.png/revision/latest?cb=20230915211808"
+        }
+      },
+      {
+        "id": 4,
+        "iconUrls": {
+          "medium": "https://static.wikia.nocookie.net/clashroyale/images/4/42/Angry_King.png/revision/latest?cb=20230915211752"
+        }
+      }
+    ]
+}
