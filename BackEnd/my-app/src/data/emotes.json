@@ -1,29 +1,202 @@
-
 {
-    "items": [
-      {
-        "id": 1,
-        "iconUrls": {
-          "medium": "https://static.wikia.nocookie.net/clashroyale/images/f/fa/Laughing_King.png/revision/latest?cb=20230915211717"
-        }
-      },
-      {
-        "id": 2,
-        "iconUrls": {
-          "medium": "https://static.wikia.nocookie.net/clashroyale/images/1/1a/Thumbs-Up_King.png/revision/latest?cb=20230915211745"
-        }
-      },
-      {
-        "id": 3,
-        "iconUrls": {
-          "medium": "https://static.wikia.nocookie.net/clashroyale/images/a/af/Crying_King.png/revision/latest?cb=20230915211808"
-        }
-      },
-      {
-        "id": 4,
-        "iconUrls": {
-          "medium": "https://static.wikia.nocookie.net/clashroyale/images/4/42/Angry_King.png/revision/latest?cb=20230915211752"
-        }
+  "items": [
+    {
+      "id": 1,
+      "iconUrls": {
+        "medium": "https://tiermaker.com/images/chart/chart/clash-royale-all-emotes-94936/cryingkingpng.png"
       }
-    ]
+    },
+    {
+      "id": 2,
+      "iconUrls": {
+        "medium": "https://tiermaker.com/images/chart/chart/clash-royale-all-emotes-94936/angrykingpng.png"
+      }
+    },
+    {
+      "id": 3,
+      "iconUrls": {
+        "medium": "https://tiermaker.com/images/chart/chart/clash-royale-all-emotes-94936/thumbs-upkingpng.png"
+      }
+    },
+    {
+      "id": 4,
+      "iconUrls": {
+        "medium": "https://tiermaker.com/images/chart/chart/clash-royale-emotes-200252/laughingkingpng.png"
+      }
+    },
+    {
+      "id": 5,
+      "iconUrls": {
+        "medium": "https://tiermaker.com/images/chart/chart/clash-royale-all-emotes-94936/yawnprincesspng.png"
+      }
+    },
+    {
+      "id": 6,
+      "iconUrls": {
+        "medium": "https://tiermaker.com/images/chart/chart/clash-royale-all-emotes-94936/thumbs-upprincesspng.png"
+      }
+    },
+    {
+      "id": 7,
+      "iconUrls": {
+        "medium": "https://tiermaker.com/images/chart/chart/clash-royale-all-emotes-94936/angryprincesspng.png"
+      }
+    },
+    {
+      "id": 8,
+      "iconUrls": {
+        "medium": "https://tiermaker.com/images/chart/chart/clash-royale-all-emotes-94936/kissprincesspng.png"
+      }
+    },
+    {
+      "id": 9,
+      "iconUrls": {
+        "medium": "https://tiermaker.com/images/chart/chart/clash-royale-all-emotes-94936/peaceprincesspng.png"
+      }
+    },
+    {
+      "id": 10,
+      "iconUrls": {
+        "medium": "https://tiermaker.com/images/chart/chart/clash-royale-all-emotes-94936/whistlingprincesspng.png"
+      }
+    },
+    {
+      "id": 11,
+      "iconUrls": {
+        "medium": "https://tiermaker.com/images/chart/chart/clash-royale-all-emotes-94936/grinprincesspng.png"
+      }
+    },
+    {
+      "id": 12,
+      "iconUrls": {
+        "medium": "https://tiermaker.com/images/chart/chart/clash-royale-all-emotes-94936/thirdanniversarygoblinpng.png"
+      }
+    },
+    {
+      "id": 13,
+      "iconUrls": {
+        "medium": "https://tiermaker.com/images/chart/chart/clash-royale-emotes-200252/thumbs-upgoblinpng.png"
+      }
+    },
+    {
+      "id": 14,
+      "iconUrls": {
+        "medium": "https://tiermaker.com/images/chart/chart/clash-royale-all-emotes-94936/laughewizpng.png"
+      }
+    },
+    {
+      "id": 15,
+      "iconUrls": {
+        "medium": "https://tiermaker.com/images/chart/chart/clash-royale-emotes-april-2022-1338820/emote-56png.png"
+      }
+    },
+    {
+      "id": 16,
+      "iconUrls": {
+        "medium": "https://tiermaker.com/images/chart/chart/clash-royale-all-emotes-94936/thumbs-upewizpng.png"
+      }
+    },
+    {
+      "id": 17,
+      "iconUrls": {
+        "medium": "https://tiermaker.com/images/chart/chart/clash-royale-emotes-200252/ideaewizpng.png"
+      }
+    },
+    {
+      "id": 18,
+      "iconUrls": {
+        "medium": "https://tiermaker.com/images/chart/chart/clash-royale-all-emotes-94936/cakegiantpng.png"
+      }
+    },
+    {
+      "id": 19,
+      "iconUrls": {
+        "medium": "https://tiermaker.com/images/chart/chart/clash-royale-all-emotes-94936/kisshogpng.png"
+      }
+    },
+    {
+      "id": 20,
+      "iconUrls": {
+        "medium": "https://tiermaker.com/images/chart/chart/clash-royale-all-emotes-94936/trophygoblinpng.png"
+      }
+    },
+    {
+      "id": 21,
+      "iconUrls": {
+        "medium": "https://tiermaker.com/images/chart/chart/clash-royale-all-emotes-94936/laughbarbarianpng.png"
+      }
+    },
+    {
+      "id": 22,
+      "iconUrls": {
+        "medium": "https://tiermaker.com/images/chart/chart/clash-royale-all-emotes-94936/ideaskeletonpng.png"
+      }
+    },
+    {
+      "id": 23,
+      "iconUrls": {
+        "medium": "https://tiermaker.com/images/chart/chart/clash-royale-emotes-200252/thinkhogpng.png"
+      }
+    },
+    {
+      "id": 24,
+      "iconUrls": {
+        "medium": "https://tiermaker.com/images/chart/chart/clash-royale-emotes-200252/thumbs-upgiantpng.png"
+      }
+    },
+    {
+      "id": 25,
+      "iconUrls": {
+        "medium": "https://tiermaker.com/images/chart/chart/clash-royale-emotes-200252/helmethoggypng.png"
+      }
+    },
+    {
+      "id": 26,
+      "iconUrls": {
+        "medium": "https://tiermaker.com/images/chart/chart/clash-royale-all-emotes-94936/headskeletonpng.png"
+      }
+    },
+    {
+      "id": 27,
+      "iconUrls": {
+        "medium": "https://tiermaker.com/images/chart/chart/clash-royale-all-emotes-94936/blinkinfernotowerpng.png"
+      }
+    },
+    {
+      "id": 28,
+      "iconUrls": {
+        "medium": "https://tiermaker.com/images/chart/chart/clash-royale-all-emotes-94936/happyminionpng.png"
+      }
+    },
+    {
+      "id": 29,
+      "iconUrls": {
+        "medium": "https://tiermaker.com/images/chart/chart/clash-royale-all-emotes-94936/fingercrlpng.png"
+      }
+    },
+    {
+      "id": 30,
+      "iconUrls": {
+        "medium": "https://tiermaker.com/images/chart/chart/clash-royale-all-emotes-94936/santaicewizardpng.png"
+      }
+    },
+    {
+      "id": 31,
+      "iconUrls": {
+        "medium": "https://tiermaker.com/images/chart/chart/clash-royale-all-emotes-94936/pancakesminipekkapng.png"
+      }
+    },
+    {
+      "id": 32,
+      "iconUrls": {
+        "medium": "https://tiermaker.com/images/chart/chart/clash-royale-emotes-april-2022-1338820/emote-92png.png"
+      }
+    },
+    {
+      "id": 33,
+      "iconUrls": {
+        "medium": "https://tiermaker.com/images/chart/chart/clash-royale-emotes-april-2022-1338820/emote-33png.png"
+      }
+    }
+  ]
 }
