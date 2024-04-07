@@ -13,6 +13,8 @@ export class CardsComponent implements OnInit {
   private _cards: Card[];
   private readonly _backendURL: any;
   private elixirValue: string | null = null;
+  private rarityValue: string | null = null;
+  private typeValue: string | null = null;
 
   constructor(private _http: HttpClient, private _route: ActivatedRoute) {
     this._cards = [];
@@ -29,11 +31,24 @@ export class CardsComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    const elixirValue = this._route.snapshot.paramMap.get('elixirValue');
+    this.elixirValue = this._route.snapshot.paramMap.get('elixirValue');
+    this.rarityValue = this._route.snapshot.paramMap.get('rarity');
+    this.typeValue = this._route.snapshot.paramMap.get('type');
   
-    if (elixirValue) {
-      const url = `${this._backendURL.elixir}/${elixirValue}`;
+    if (this.elixirValue) {
+      const url = `${this._backendURL.elixir}/${this.elixirValue}`;
       this._http.get<Card[]>(url).subscribe({
+        next: (cards: Card[]) => this._cards = cards,
+        error: (error: any) => console.error('Error fetching cards:', error)
+      });
+    } else if (this.rarityValue) {
+      const url = `${this._backendURL.rarity}/${this.rarityValue}`;
+      this._http.get<Card[]>(url).subscribe({
+        next: (cards: Card[]) => this._cards = cards,
+        error: (error: any) => console.error('Error fetching cards:', error)
+      });
+    } else if (this.typeValue) {
+      this._http.get<Card[]>(`${this._backendURL.type}/${this.typeValue}`).subscribe({
         next: (cards: Card[]) => this._cards = cards,
         error: (error: any) => console.error('Error fetching cards:', error)
       });
@@ -47,6 +62,18 @@ export class CardsComponent implements OnInit {
 
   get cards(): Card[] {
     return this._cards;
+  }
+
+  get elixir(): string | null {
+    return this.elixirValue;
+  }
+
+  get rarity() : string | null {
+    return this.rarityValue;
+  }
+
+  get type() : string | null {
+    return this.typeValue;
   }
 
   getAllCards(): void {

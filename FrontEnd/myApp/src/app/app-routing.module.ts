@@ -10,6 +10,8 @@ const routes: Routes = [
   { path: 'home', component: HomeComponent },
   { path: 'cards', component: CardsComponent },
   { path: 'cards/elixir/:elixirValue', component: CardsComponent },
+  { path: 'cards/rarity/:rarity', component: CardsComponent },
+  { path: 'cards/type/:type', component: CardsComponent },
   { path: 'cards/:name', component: CardsComponent },
   { path: 'emotes', component: EmotesComponent },
   { path: 'description', component: DescriptionComponent }

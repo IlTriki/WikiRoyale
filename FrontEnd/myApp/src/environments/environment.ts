@@ -11,6 +11,8 @@ export const environment = {
       endpoints: {
         allCards: '/cards',
         elixir: '/cards/elixir',
+        rarity: '/cards/rarity',
+        type: '/cards/type',
         randomCard: '/cards/random',
         cardByName: '/cards/name',
         allEmotes: '/emotes',

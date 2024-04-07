@@ -68,6 +68,20 @@ export class CardsService {
           cards.filter((card: Card) => card.elixirCost == elixir),
         ),
       );
+    
+    findByRarity = (rarity: string): Observable<Card[]> =>
+      of(this._cards).pipe(
+        map((cards: Card[]) =>
+          cards.filter((card: Card) => card.rarity.toLowerCase() === rarity.toLowerCase()),
+        ),
+      );
+
+    findByType = (type: string): Observable<Card[]> =>
+      of(this._cards).pipe(
+        map((cards: Card[]) =>
+          cards.filter((card: Card) => card.type.toLowerCase() === type.toLowerCase()),
+        ),
+      );
 
   /**
    * Check if Card already exists and add it in cards list

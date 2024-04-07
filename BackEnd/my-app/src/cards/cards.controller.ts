@@ -50,6 +50,16 @@ export class CardsController {
     return this._cardsService.findByElixir(elixir);
     }
 
+    @Get('rarity/:rarity')
+    findByRarity(@Param('rarity') rarity: string): Observable<Card[]> {
+    return this._cardsService.findByRarity(rarity);
+    }
+
+    @Get('type/:type')
+    findByType(@Param('type') type: string): Observable<Card[]> {
+    return this._cardsService.findByType(type);
+    }
+
     /**
      * Handler to answer to /cards route
      *
