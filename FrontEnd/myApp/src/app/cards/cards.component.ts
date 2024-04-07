@@ -46,4 +46,17 @@ export class CardsComponent {
     this._http.get<Card[]>(this._backendURL.allCards)
       .subscribe({ next: (cards: Card[]) => this._cards = cards });
   }
+
+  getCardsByType(type: string): Card[] {
+    return this._cards.filter(c => c.type === type);
+  }
+
+
+  /**
+   * Function to handle search by card name
+   */
+  getCardByName(name: string): void {
+    this._http.get<Card[]>(`${this._backendURL.cardByName}/${name}`)
+      .subscribe({ next: (cards: Card[]) => this._cards = cards });
+  }
 }

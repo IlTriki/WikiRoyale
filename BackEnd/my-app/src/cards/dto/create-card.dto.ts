@@ -6,6 +6,7 @@ export class CreateCardDTO {
     readonly maxLevel : number;
     readonly maxEvolutionLevel : number;
     readonly elixirCost : number;
+    readonly type : string;
     readonly iconUrls : CardIconsDTO;
     readonly rarity : string;
 }

@@ -4,6 +4,7 @@ export type Card = {
     maxLevel : number;
     maxEvolutionLevel : number;
     elixirCost : number;
+    type : string;
     iconUrls : CardIcons;
     rarity : string;
 }

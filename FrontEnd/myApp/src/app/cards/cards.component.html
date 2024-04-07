@@ -11,6 +11,10 @@
         <div *ngFor="let card of cards">
             <div class="container">
                 <img src="{{ card.iconUrls.medium}}" alt="{{card.name}}" class="image">
+                <div class="elixir">
+                    <img src="../../assets/images/Elixir.svg" alt="" class="elixir-icon">
+                    <p class="elixir-cost">{{ card.elixirCost }}</p>
+                </div>
                 <div class="overlay" *ngIf="card.iconUrls.evolutionMedium">
                     <img src="{{ card.iconUrls.evolutionMedium}}" alt="{{ card.name }}" class="evolution">
                 </div>

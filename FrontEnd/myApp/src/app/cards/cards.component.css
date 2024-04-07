@@ -3,14 +3,10 @@
     src: url('../../assets/fonts/You_Blockhead.ttf') format('truetype');
 }
 
-.bg-image {
-    background-image: url("../../assets/images/background2.jpg");
-}
-
 .title {
     background-color: transparent;
     text-align: center;
-    font-size: 4vw;
+    font-size: 300%;
     text-decoration: none;
     display: flex;
     flex-direction: row;
@@ -21,6 +17,54 @@
 .title img {
     width: 25%;
     height: auto;
+}
+
+@media (max-width: 870px) {
+    .title img {
+        display: none;
+    }
+
+    .overlay{
+        animation : fade 3s infinite alternate;
+    }
+
+    @keyframes fade {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+}
+
+.elixir {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 25%;
+    height: 100%;
+    z-index: 1;
+}
+
+
+.elixir-icon {
+    position: absolute;
+    top: 10%;
+    left: 0;
+    z-index: 1;
+    max-width: 100%;
+}
+
+.elixir-cost {
+    position: absolute;
+    top: 6%;
+    left: 35%;
+    z-index: 1;
+    font-size: 100%;
+    font-family: 'Royale';
+    color: white;
+
 }
 
 section {
@@ -43,12 +87,13 @@ section {
     height: auto;
 }
 
+
 .overlay {
     position: absolute;
     top: 0;
     left: 0;
     opacity: 0;
-    transition: opacity 0.3s ease;
+    transition : opacity 0.3s ease;
 }
 
 .container:hover .overlay {
@@ -60,6 +105,7 @@ section {
     width: 100%;
     height: auto;
 }
+
 
 .details {
     display: flex;
