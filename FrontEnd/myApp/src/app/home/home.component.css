@@ -4,14 +4,14 @@
 }
 
 .bg-image {
-  background-image: url("../../assets/images/background2.jpg");
-  border-bottom: black solid 4px;
+  background-image: url('../../assets/images/background_accueil.png');
+  background-size: 100% 100%;
 }
 
 .title {
   background-color: transparent;
   text-align: center;
-  font-size: 4vw;
+  font-size: 3vw;
   text-decoration: none;
   display: flex;
   flex-direction: row;
@@ -20,15 +20,12 @@
 }
 
 .title img {
-  width: 25%;
+  width: 15%;
   height: auto;
 }
 
 
 #back {
-    background-image: url("../../assets/images/background_accueil.png");
-    background-size: 100%;
-    background-size: cover;
     padding: 40px;
 }
 
@@ -42,7 +39,7 @@
 #presentation {
     text-align: center;
     text-align: center;
-    font-size: 30px;
+    font-size: 1.5vw;
     color: white;
     background-color: rgba(0, 0, 0, 0.6); 
     padding: 20px; 
@@ -58,7 +55,7 @@ section {
     background-color: #f4cf6b; 
     color: #0c3351; 
     padding: 12px 24px;
-    font-size: 18px;
+    font-size: 1.5vw;
     font-weight: bold;
     text-transform: uppercase; 
     cursor: pointer;
