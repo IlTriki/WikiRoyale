@@ -16,7 +16,7 @@ export class CardsController {
     constructor(private readonly _cardsService: CardsService) {}
 
     /**
-     * Handler to answer to /people route
+     * Handler to answer to /cards route
      *
      * @returns Observable<Card[] | void>
      */
@@ -26,7 +26,7 @@ export class CardsController {
     }
 
     /**
-     * Handler to answer to /people/random route
+     * Handler to answer to /cards/random route
      *
      * @returns Observable<Card | void>
      */
@@ -36,17 +36,22 @@ export class CardsController {
     }
 
     /**
-     * Handler to answer to /people/:id route
+     * Handler to answer to /cards/:id route
      *
      * @returns Observable<Card>
      */
-    @Get(':name')
+    @Get('name/:name')
     findOne(@Param('name') name: string): Observable<Card> {
     return this._cardsService.findOne(name);
     }
 
+    @Get('elixir/:elixir')
+    findByElixir(@Param('elixir') elixir: number): Observable<Card[]> {
+    return this._cardsService.findByElixir(elixir);
+    }
+
     /**
-     * Handler to answer to /people route
+     * Handler to answer to /cards route
      *
      * @param createCardDto
      *

@@ -7,24 +7,36 @@
             <img src="../../assets/images/logo.webp" alt="">
         </a>        
     </section>
+    <section id="sorting" >
+        <select name="sorting" (change)="onSortChange($event)">
+            <option value="default" selected>Default</option>
+            <option value="name">Name</option>
+            <option value="elixir">Elixir</option>
+            <option value="rarity">Rarity</option>
+        </select>        
+    </section>
     <section>
-        <div *ngFor="let card of cards">
-            <div class="container">
-                <img src="{{ card.iconUrls.medium}}" alt="{{card.name}}" class="image">
-                <div class="elixir">
-                    <img src="../../assets/images/Elixir.svg" alt="" class="elixir-icon">
-                    <p class="elixir-cost">{{ card.elixirCost }}</p>
-                </div>
-                <div class="overlay" *ngIf="card.iconUrls.evolutionMedium">
-                    <img src="{{ card.iconUrls.evolutionMedium}}" alt="{{ card.name }}" class="evolution">
-                </div>
-            </div>
-            <div class="details">
-                <p> {{ card.name }} </p>
-                <button class="bouton-rond" mat-fab extended [routerLink]="['/cards', card.name]">
-                    Details
-                </button>
-            </div>
+        <h2>Tower troops</h2>
+        <div class="cards-div">
+            <app-card *ngFor="let card of getCardsByType('tower troop')" [card]="card"></app-card>
+        </div>
+    </section>
+    <section>
+        <h2>Troops</h2>
+        <div class="cards-div">
+            <app-card *ngFor="let card of getCardsByType('troop')" [card]="card"></app-card>
+        </div>
+    </section>
+    <section>
+        <h2>Buildings</h2>
+        <div class="cards-div">
+            <app-card *ngFor="let card of getCardsByType('building')" [card]="card"></app-card>
+        </div>
+    </section>
+    <section>
+        <h2>Spells</h2>
+        <div class="cards-div">
+            <app-card *ngFor="let card of getCardsByType('spell')" [card]="card"></app-card>
         </div>
     </section>
 </div>

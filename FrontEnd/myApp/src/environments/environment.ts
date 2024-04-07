@@ -10,6 +10,7 @@ export const environment = {
       port: '3000',
       endpoints: {
         allCards: '/cards',
+        elixir: '/cards/elixir',
         randomCard: '/cards/random',
         cardByName: '/cards/name',
         allEmotes: '/emotes',

@@ -1,0 +1,16 @@
+<div class="container">
+    <img [src]="card.iconUrls.medium" [alt]="card.name" class="image">
+    <div *ngIf="card.elixirCost" class="elixir">
+        <img src="../../assets/images/Elixir.svg" alt="" class="elixir-icon">
+        <p class="elixir-cost">{{ card.elixirCost != 0 ? card.elixirCost : '?' }}</p>
+    </div>
+    <div class="overlay" *ngIf="card.iconUrls.evolutionMedium">
+        <img [src]="card.iconUrls.evolutionMedium" [alt]="card.name" class="evolution">
+    </div>
+</div>
+<div class="details">
+    <p>{{ card.name }}</p>
+    <button class="bouton-rond" mat-fab extended [routerLink]="['/cards', card.name]">
+        Details
+    </button>
+</div>

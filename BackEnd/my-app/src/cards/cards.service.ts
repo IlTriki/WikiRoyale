@@ -1,6 +1,6 @@
 import {
-    Injectable,
-    NotFoundException
+  Injectable,
+  NotFoundException
 } from '@nestjs/common';
 import { find, from, Observable, of, throwError } from 'rxjs';
 import { map, mergeMap } from 'rxjs/operators';
@@ -61,6 +61,13 @@ export class CardsService {
             ),
       ),
     );
+
+    findByElixir = (elixir: number): Observable<Card[]> =>
+      of(this._cards).pipe(
+        map((cards: Card[]) =>
+          cards.filter((card: Card) => card.elixirCost == elixir),
+        ),
+      );
 
   /**
    * Check if Card already exists and add it in cards list

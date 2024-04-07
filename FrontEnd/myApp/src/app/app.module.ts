@@ -12,6 +12,7 @@ import { CardsComponent } from './cards/cards.component';
 import { EmotesComponent } from './emotes/emotes.component';
 import { HomeComponent } from './home/home.component';
 import { DescriptionComponent } from './description/description.component';
+import { CardComponent } from './shared/card/card.component';
 
 
 
@@ -23,6 +24,7 @@ import { DescriptionComponent } from './description/description.component';
     CardsComponent,
     EmotesComponent,
     DescriptionComponent,
+    CardComponent,
   ],
   imports: [
     BrowserModule,

@@ -1,28 +1,10 @@
 @font-face {
     font-family: 'Royale';
-    src: url('../../assets/fonts/You_Blockhead.ttf') format('truetype');
+    src: url('../../../assets/fonts/You_Blockhead.ttf') format('truetype');
 }
 
-.title {
-    background-color: transparent;
-    text-align: center;
-    font-size: 300%;
-    text-decoration: none;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-}
-
-.title img {
-    width: 25%;
-    height: auto;
-}
 
 @media (max-width: 870px) {
-    .title img {
-        display: none;
-    }
 
     .overlay{
         animation : fade 3s infinite alternate;
@@ -65,16 +47,6 @@
     font-family: 'Royale';
     color: white;
 
-}
-
-section{
-    margin: 2%;
-}
-
-.cards-div {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
 }
 
 .container {
@@ -151,10 +123,6 @@ p {
     text-align: center;
 }
 
-.yellow {
-    color: #FFD700;
-}
-
 .bouton-rond {
     display: inline-block;
     border: none;
@@ -179,28 +147,4 @@ p {
 .bouton-rond:active {
     background-color: #eac54a;
     transform: translateY(1px);
-}
-
-#sorting {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-}
-
-select {
-    font-family: 'Royale';
-    font-size: 16px;
-    border: 2px solid #0c3351;
-    border-radius: 8px;
-    padding: 8px 16px;
-    background-color: #4d739e;
-    color: white;
-    outline: none;
-    cursor: pointer;
-    appearance: none;
-}
-
-option {
-    background-color: #0c3351;
-    color: white;
 }

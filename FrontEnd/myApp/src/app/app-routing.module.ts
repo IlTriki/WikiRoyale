@@ -9,6 +9,7 @@ const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
   { path: 'home', component: HomeComponent },
   { path: 'cards', component: CardsComponent },
+  { path: 'cards/elixir/:elixirValue', component: CardsComponent },
   { path: 'cards/:name', component: CardsComponent },
   { path: 'emotes', component: EmotesComponent },
   { path: 'description', component: DescriptionComponent }
