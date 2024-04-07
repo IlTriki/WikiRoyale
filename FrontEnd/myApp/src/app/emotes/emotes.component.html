@@ -8,6 +8,16 @@
         </a>        
     </section>
     <section>
+        <h1>
+        <span class="yellow">C'est quoi une emote ?</span>
+        </h1>
+        <div id="presentation">
+            <p>Une "emote" dans Clash Royale est une petite animation ou un symbole utilisé pour communiquer avec votre adversaire pendant une partie.</p> 
+            <p>Ces émoticônes peuvent exprimer diverses émotions telles que la joie, la tristesse, la surprise, ou même la provocation.</p> 
+            <p>Les joueurs peuvent les utiliser pour saluer, taquiner, ou réagir aux événements en jeu.</p>
+        </div>
+    </section>
+    <section>
         <div *ngFor="let emote of emotes">
             <div class="container">
                 <img src="{{ emote.iconUrls.medium }}" alt="{{emote.id}}" class="image">
