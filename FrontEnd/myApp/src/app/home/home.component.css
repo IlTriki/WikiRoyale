@@ -8,32 +8,8 @@
   background-size: 100% 100%;
 }
 
-.title {
-  background-color: transparent;
-  text-align: center;
-  font-size: 3vw;
-  text-decoration: none;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-}
-
-.title img {
-  width: 15%;
-  height: auto;
-}
-
-
 #back {
     padding: 40px;
-}
-
-#titre {
-    text-align: center;
-    font-size: 30px;
-    color: white;
-    margin-top: 80px;
 }
 
 #presentation {

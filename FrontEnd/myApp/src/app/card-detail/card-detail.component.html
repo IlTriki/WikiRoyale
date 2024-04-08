@@ -1,0 +1,32 @@
+<app-header></app-header>
+<div *ngIf="cardInfo && card" class="bg-image">
+  <div class="box">
+    <div class="column">
+      <h2>{{ card.name }}</h2>
+      <div class="container">
+        <img [src]="card.iconUrls.medium" [alt]="card.name" class="image">
+        <div *ngIf="card.elixirCost" class="elixir">
+            <img src="../../assets/images/Elixir.svg" alt="" class="elixir-icon">
+            <p class="elixir-cost">{{ card.elixirCost != 0 ? card.elixirCost : '?' }}</p>
+        </div>
+        <div class="overlay" *ngIf="card.iconUrls.evolutionMedium">
+            <img [src]="card.iconUrls.evolutionMedium" [alt]="card.name" class="evolution">
+        </div>
+      </div>
+    </div>
+    <div class="column">
+      <p *ngIf="cardInfo['Points de vie']">Points de vie: {{ cardInfo['Points de vie'] }}</p>
+      <p *ngIf="cardInfo['Bouclier']">Bouclier: {{ cardInfo['Bouclier'] }}</p>
+      <p *ngIf="cardInfo['Dégâts']">Dégâts: {{ cardInfo['Dégâts'] }}</p>
+      <p *ngIf="cardInfo['Dégâts mortels']">Dégâts mortels: {{ cardInfo['Dégâts mortels'] }}</p>
+      <p *ngIf="cardInfo['Vitesse de frappe']">Vitesse de frappe: {{ cardInfo['Vitesse de frappe'] }}</p>
+      <p *ngIf="cardInfo['Portée']">Portée: {{ cardInfo['Portée'] }}</p>
+      <p *ngIf="cardInfo['Vitesse']">Vitesse: {{ cardInfo['Vitesse'] }}</p>
+      <p *ngIf="cardInfo['Nombre']">Nombre: {{ cardInfo['Nombre'] }}</p>
+      <p *ngIf="cardInfo['Dégâts Tour couronnée']">Dégâts Tour couronnée: {{ cardInfo['Dégâts Tour couronnée'] }}</p>
+      <p *ngIf="cardInfo['Rayon']">Rayon: {{ cardInfo['Rayon'] }}</p>
+      <p *ngIf="cardInfo['Durée de vie']">Durée de vie: {{ cardInfo['Durée de vie'] }}</p>
+    </div>
+    <p>Description: {{ cardInfo.description }}</p>
+  </div>
+</div>

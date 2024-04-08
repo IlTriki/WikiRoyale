@@ -90,46 +90,4 @@ export class CardsService {
    *
    * @returns {Observable<Card>}
    */
-//   create = (Card: CreateCardDTO): Observable<Card> =>
-//     from(this._cards).pipe(
-//       find(
-//         (CardFound: Card) =>
-//           CardFound.lastname.toLowerCase() ===
-//             Card.lastname.toLowerCase() &&
-//           CardFound.firstname.toLowerCase() ===
-//             Card.firstname.toLowerCase(),
-//       ),
-//       mergeMap((CardFound: Card) =>
-//         !!CardFound
-//           ? throwError(
-//               () =>
-//                 new ConflictException(
-//                   `People with lastname '${Card.lastname}' and firstname '${Card.firstname}' already exists`,
-//                 ),
-//             )
-//           : this._addCard(Card),
-//       ),
-//     );
-
-  /**
-   * Add Card with good data in cards list
-   *
-   * @param Card to add
-   *
-   * @returns {Observable<Card>}
-   *
-   * @private
-   */
-//   private _addCard = (Card: CreateCardDTO): Observable<Card> =>
-//     of({
-//       ...Card,
-//       id: this._createId(),
-//       birthDate: this._parseDate('06/05/1985').toString(),
-//       photo: 'https://randomuser.me/api/portraits/lego/6.jpg',
-//     } as Partial<Card>).pipe(
-//       tap(
-//         (createdCard: Card) =>
-//           (this._cards = this._cards.concat(createdCard)),
-//       ),
-//     );
 }

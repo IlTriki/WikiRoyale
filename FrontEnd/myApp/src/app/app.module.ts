@@ -14,6 +14,8 @@ import { HomeComponent } from './home/home.component';
 import { DescriptionComponent } from './description/description.component';
 import { CardComponent } from './shared/card/card.component';
 import { MapComponent } from './map/map.component';
+import { CardDetailComponent } from './card-detail/card-detail.component';
+import { HeaderComponent } from './shared/header/header.component';
 
 
 
@@ -27,6 +29,8 @@ import { MapComponent } from './map/map.component';
     DescriptionComponent,
     CardComponent,
     MapComponent,
+    CardDetailComponent,
+    HeaderComponent,
   ],
   imports: [
     BrowserModule,

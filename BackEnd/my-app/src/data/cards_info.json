@@ -1,0 +1,886 @@
+[
+    {
+        "name": "Knight",
+        "Points de vie": "1766",
+        "D\u00e9g\u00e2ts": "202",
+        "Vitesse de frappe": "1.2",
+        "Vitesse": "Moyen",
+        "description": "Un sp\u00e9cialiste du combat rapproch\u00e9, cousin charmant et cultiv\u00e9 du barbare. On raconte que la magnificence de sa moustache a suffi \u00e0 justifier son adoubement."
+    },
+    {
+        "name": "Archers",
+        "Points de vie": "304",
+        "D\u00e9g\u00e2ts": "107",
+        "Vitesse de frappe": "0.9",
+        "Port\u00e9e": "5",
+        "Vitesse": "Moyen",
+        "Nombre": "2",
+        "description": "Un duo d'attaquantes \u00e0 distance l\u00e9g\u00e8rement prot\u00e9g\u00e9es. Elles vous aideront \u00e0 \u00e9liminer les unit\u00e9s terrestres et a\u00e9riennes, mais ne comptez pas sur elles pour vos conseils coiffure."
+    },
+    {
+        "name": "Goblins",
+        "Points de vie": "202",
+        "D\u00e9g\u00e2ts": "120",
+        "Vitesse de frappe": "1.1",
+        "Vitesse": "Tr\u00e8s rapide",
+        "Nombre": "4",
+        "description": "Quatre attaquants de m\u00eal\u00e9e rapides et sans armure. Petits, rapides, verts et m\u00e9chants\u00a0!"
+    },
+    {
+        "name": "Giant",
+        "Points de vie": "4091",
+        "D\u00e9g\u00e2ts": "254",
+        "Vitesse de frappe": "1.5",
+        "Vitesse": "Lent",
+        "description": "Lent mais dur \u00e0 cuire, il attaque uniquement les b\u00e2timents. Une v\u00e9ritable \u00e9quipe de d\u00e9molisseurs \u00e0 lui tout seul\u00a0!"
+    },
+    {
+        "name": "P.E.K.K.A",
+        "Points de vie": "3760",
+        "D\u00e9g\u00e2ts": "816",
+        "Vitesse de frappe": "1.8",
+        "Vitesse": "Lent",
+        "description": "Une combattante de m\u00eal\u00e9e peu rapide, pourvue d'une \u00e9paisse armure. Impulsive mais sacr\u00e9ment percutante."
+    },
+    {
+        "name": "Minions",
+        "Points de vie": "230",
+        "D\u00e9g\u00e2ts": "117",
+        "Vitesse de frappe": "1",
+        "Port\u00e9e": "2",
+        "Vitesse": "Rapide",
+        "Nombre": "3",
+        "description": "Trois attaquants volants, rapides et sans armure. Les roses sont rouges et les gargouilles sont bleues, elles volent dans les cieux et zigouillent tout ce qui bouge."
+    },
+    {
+        "name": "Balloon",
+        "Points de vie": "1680",
+        "D\u00e9g\u00e2ts": "640",
+        "D\u00e9g\u00e2ts mortels": "240",
+        "Vitesse de frappe": "2",
+        "Vitesse": "Moyen",
+        "description": "Ils ont beau faire joli dans le ciel, vous n'avez pas envie de voir ces ballons se rassembler \u00e0 l'horizon\u00a0: ils lancent des bombes puissantes et, lorsqu'ils sont abattus, ils s'\u00e9crasent en infligeant des d\u00e9g\u00e2ts de zone."
+    },
+    {
+        "name": "Witch",
+        "Points de vie": "838",
+        "D\u00e9g\u00e2ts": "134",
+        "Vitesse de frappe": "1.1",
+        "Port\u00e9e": "5",
+        "Vitesse": "Moyen",
+        "description": "Elle invoque des squelettes, tire des rayons destructeurs et a des yeux roses lumineux qui malheureusement ne lancent pas de lasers."
+    },
+    {
+        "name": "Barbarians",
+        "Points de vie": "670",
+        "D\u00e9g\u00e2ts": "192",
+        "Vitesse de frappe": "1.3",
+        "Vitesse": "Moyen",
+        "Nombre": "5",
+        "description": "Une horde d'attaquants de m\u00eal\u00e9e pourvus d'une moustache d'enfer et d'un temp\u00e9rament tout aussi infernal."
+    },
+    {
+        "name": "Golem",
+        "Points de vie": "5120",
+        "D\u00e9g\u00e2ts": "312",
+        "D\u00e9g\u00e2ts mortels": "224",
+        "Vitesse de frappe": "2.5",
+        "Vitesse": "Lent",
+        "description": "Lent mais robuste, il attaque uniquement les b\u00e2timents. Lorsqu'il est d\u00e9truit, il explose, se divise en deux golemites et inflige des d\u00e9g\u00e2ts de zone."
+    },
+    {
+        "name": "Skeletons",
+        "Points de vie": "81",
+        "D\u00e9g\u00e2ts": "81",
+        "Vitesse de frappe": "1",
+        "Vitesse": "Rapide",
+        "Nombre": "3",
+        "description": "Trois combattants de m\u00eal\u00e9e, rapides mais tr\u00e8s faibles. Encerclez vos ennemis avec ces tas d'os\u00a0!"
+    },
+    {
+        "name": "Valkyrie",
+        "Points de vie": "1908",
+        "D\u00e9g\u00e2ts": "267",
+        "Vitesse de frappe": "1.5",
+        "Vitesse": "Moyen",
+        "description": "Combattante de m\u00eal\u00e9e efficace qui inflige des d\u00e9g\u00e2ts de zone autour d'elle. Face \u00e0 une horde d'ennemis, aucun probl\u00e8me. Elle est capable de les an\u00e9antir en quelques petits tours."
+    },
+    {
+        "name": "Skeleton Army",
+        "Points de vie": "81",
+        "D\u00e9g\u00e2ts": "81",
+        "Vitesse de frappe": "1",
+        "Vitesse": "Rapide",
+        "Nombre": "15",
+        "description": "G\u00e9n\u00e8re une arm\u00e9e de squelettes. Je vous pr\u00e9sente K\u00e9vin et ses potes Kenny, Katie, Karim, Kelly, etc."
+    },
+    {
+        "name": "Bomber",
+        "Points de vie": "332",
+        "D\u00e9g\u00e2ts": "230",
+        "Vitesse de frappe": "1.8",
+        "Port\u00e9e": "4.5",
+        "Vitesse": "Moyen",
+        "description": "Petit squelette sans grande protection qui lance des bombes. Inflige des d\u00e9g\u00e2ts de zone capables d'an\u00e9antir une nu\u00e9e d'ennemis."
+    },
+    {
+        "name": "Musketeer",
+        "Points de vie": "720",
+        "D\u00e9g\u00e2ts": "218",
+        "Vitesse de frappe": "1",
+        "Port\u00e9e": "6",
+        "Vitesse": "Moyen",
+        "description": "Ne vous laissez pas berner par sa coiffure sophistiqu\u00e9e. La mousquetaire atteint toujours sa cible avec son fid\u00e8le tromblon."
+    },
+    {
+        "name": "Baby Dragon",
+        "Points de vie": "1152",
+        "D\u00e9g\u00e2ts": "160",
+        "Vitesse de frappe": "1.5",
+        "Port\u00e9e": "3.5",
+        "Vitesse": "Rapide",
+        "description": "Fait des rototos-boules de feu qui infligent des d\u00e9g\u00e2ts de zone depuis les airs. Les b\u00e9b\u00e9s dragons naissent adorables, affam\u00e9s et pr\u00eats pour un bon petit barbecue."
+    },
+    {
+        "name": "Prince",
+        "Points de vie": "1920",
+        "D\u00e9g\u00e2ts": "392",
+        "Vitesse de frappe": "1.4",
+        "Vitesse": "Moyen",
+        "description": "Ne vous laissez pas berner par son petit poney. Une fois le prince lanc\u00e9, vous risquez fort de vous faire pi\u00e9tiner. Les d\u00e9g\u00e2ts inflig\u00e9s doublent quand il charge."
+    },
+    {
+        "name": "Wizard",
+        "Points de vie": "720",
+        "D\u00e9g\u00e2ts": "281",
+        "Vitesse de frappe": "1.4",
+        "Port\u00e9e": "5.5",
+        "Vitesse": "Moyen",
+        "description": "Le sorcier est l'homme le plus g\u00e9nial qui ait jamais franchi les portes de l'ar\u00e8ne. Sa beaut\u00e9 embrasera votre c\u0153ur... tout comme ses boules de feu."
+    },
+    {
+        "name": "Mini P.E.K.K.A",
+        "Points de vie": "1361",
+        "D\u00e9g\u00e2ts": "720",
+        "Vitesse de frappe": "1.6",
+        "Vitesse": "Rapide",
+        "description": "L'ar\u00e8ne est une zone certifi\u00e9e sans papillon. Les P.E.K.K.A \u00e9viteront ainsi toute distraction et se concentreront sur la destruction."
+    },
+    {
+        "name": "Spear Goblins",
+        "Points de vie": "133",
+        "D\u00e9g\u00e2ts": "81",
+        "Vitesse de frappe": "1.7",
+        "Port\u00e9e": "5.5",
+        "Vitesse": "Tr\u00e8s rapide",
+        "Nombre": "3",
+        "description": "Trois attaquants \u00e0 distance d\u00e9pourvus d'armure. Qui a bien pu leur apprendre \u00e0 manier la lance\u00a0? Qui a pu penser que c'\u00e9tait une bonne id\u00e9e\u00a0?"
+    },
+    {
+        "name": "Giant Skeleton",
+        "Points de vie": "3616",
+        "D\u00e9g\u00e2ts": "267",
+        "D\u00e9g\u00e2ts mortels": "534",
+        "Vitesse de frappe": "1.4",
+        "Vitesse": "Moyen",
+        "description": "Plus le squelette est imposant, plus la bombe qu'il transporte est grosse. Elle explose quand le squelette g\u00e9ant meurt."
+    },
+    {
+        "name": "Hog Rider",
+        "Points de vie": "1696",
+        "D\u00e9g\u00e2ts": "318",
+        "Vitesse de frappe": "1.6",
+        "Vitesse": "Tr\u00e8s rapide",
+        "description": "Combattant de m\u00eal\u00e9e rapide visant les b\u00e2timents, capable de sauter par-dessus la rivi\u00e8re. S'il entend crier \u00ab\u00a0Chevaucheur de cochooon\u00a0\u00bb, il r\u00e9pond \u00e0 l'appel jusque dans l'ar\u00e8ne."
+    },
+    {
+        "name": "Minion Horde",
+        "Points de vie": "230",
+        "D\u00e9g\u00e2ts": "117",
+        "Vitesse de frappe": "1",
+        "Port\u00e9e": "2",
+        "Vitesse": "Rapide",
+        "Nombre": "6",
+        "description": "Six attaquants volants, rapides et sans armure. Leurs adversaires ne manqueront pas de voir trente-six chandelles."
+    },
+    {
+        "name": "Ice Wizard",
+        "Points de vie": "688",
+        "D\u00e9g\u00e2ts": "90",
+        "Vitesse de frappe": "1.7",
+        "Port\u00e9e": "5.5",
+        "Vitesse": "Moyen",
+        "description": "Ce magicien lance sur les ennemis des \u00e9clats de glace qui ralentissent leur vitesse de d\u00e9placement et d'attaque. Certes, \u00e7a jette un froid, mais il a quand m\u00eame la moustache en guidon la plus torride du royaume."
+    },
+    {
+        "name": "Royal Giant",
+        "Points de vie": "3072",
+        "D\u00e9g\u00e2ts": "307",
+        "Vitesse de frappe": "1.7",
+        "Port\u00e9e": "5",
+        "Vitesse": "Lent",
+        "description": "Si la destruction des b\u00e2timents ennemis avec son \u00e9norme canon est son devoir, sa passion est de dompter sa barbe blonde tout en finesse."
+    },
+    {
+        "name": "Guards",
+        "Points de vie": "81",
+        "Bouclier": "256",
+        "D\u00e9g\u00e2ts": "121",
+        "Vitesse de frappe": "1.1",
+        "Vitesse": "Rapide",
+        "Nombre": "3",
+        "description": "Trois sacs d'os impitoyables arm\u00e9s de boucliers. Enlevez-leur leurs boucliers et qu'est-ce qui reste\u00a0? Trois sacs d'os impitoyables."
+    },
+    {
+        "name": "Princess",
+        "Points de vie": "261",
+        "D\u00e9g\u00e2ts": "169",
+        "Vitesse de frappe": "3",
+        "Port\u00e9e": "9",
+        "Vitesse": "Moyen",
+        "description": "La sublime princesse d\u00e9coche des fl\u00e8ches enflamm\u00e9es \u00e0 longue port\u00e9e. Si vous avez l'impression de vous consumer pour elle, c'est probablement que vous \u00eates en feu."
+    },
+    {
+        "name": "Dark Prince",
+        "Points de vie": "1200",
+        "Bouclier": "240",
+        "D\u00e9g\u00e2ts": "248",
+        "Vitesse de frappe": "1.3",
+        "Vitesse": "Moyen",
+        "description": "Le prince t\u00e9n\u00e9breux inflige des d\u00e9g\u00e2ts de zone et laisse son gourdin \u00e0 pointes s'exprimer \u00e0 sa place... parce que quand il parle, on a l'impression qu'il a un seau sur la t\u00eate."
+    },
+    {
+        "name": "Three Musketeers",
+        "Points de vie": "720",
+        "D\u00e9g\u00e2ts": "218",
+        "Vitesse de frappe": "1",
+        "Port\u00e9e": "6",
+        "Vitesse": "Moyen",
+        "Nombre": "3",
+        "description": "Trio de tireuses d'\u00e9lite ind\u00e9pendantes et puissantes, qui luttent pour la justice et l'honneur. Leur manquer de respect ne serait pas une simple erreur, ce serait un p\u00e9ch\u00e9 capital\u00a0!"
+    },
+    {
+        "name": "Lava Hound",
+        "Points de vie": "3581",
+        "D\u00e9g\u00e2ts": "54",
+        "Vitesse de frappe": "1.3",
+        "Port\u00e9e": "2",
+        "Vitesse": "Lent",
+        "description": "Le molosse de lave est une majestueuse cr\u00e9ature volante qui attaque les b\u00e2timents. Les roquets de lave sont des chiots \u00e9nerv\u00e9s moins majestueux qui attaquent tout ce qu'ils trouvent."
+    },
+    {
+        "name": "Ice Spirit",
+        "Points de vie": "230",
+        "D\u00e9g\u00e2ts": "110",
+        "Port\u00e9e": "2.5",
+        "Vitesse": "Tr\u00e8s rapide",
+        "description": "Fait appara\u00eetre un petit esprit de glace plein d'entrain, capable de congeler un groupe d'ennemis. Un vrai vent de fra\u00eecheur."
+    },
+    {
+        "name": "Fire Spirit",
+        "Points de vie": "230",
+        "D\u00e9g\u00e2ts": "207",
+        "Port\u00e9e": "2.5",
+        "Vitesse": "Tr\u00e8s rapide",
+        "description": "L'esprit de feu nourrit une passion br\u00fblante pour les c\u00e2lins trop chaleureux. Ce serait adorable s'il ne mettait pas le feu \u00e0 tout ce qu'il touche."
+    },
+    {
+        "name": "Miner",
+        "Points de vie": "1210",
+        "D\u00e9g\u00e2ts": "193",
+        "D\u00e9g\u00e2ts Tour couronn\u00e9e": "49",
+        "Vitesse de frappe": "1.2",
+        "Vitesse": "Rapide",
+        "description": "Le mineur creuse des tunnels souterrains et appara\u00eet n'importe o\u00f9 dans l'ar\u00e8ne. Ce n'est pas de la magie, juste une pelle. Une pelle qui inflige des d\u00e9g\u00e2ts r\u00e9duits sur les tours couronn\u00e9es."
+    },
+    {
+        "name": "Sparky",
+        "Points de vie": "1452",
+        "D\u00e9g\u00e2ts": "1331",
+        "Vitesse de frappe": "4",
+        "Port\u00e9e": "5",
+        "Vitesse": "Lent",
+        "description": "Zappy se charge lentement, puis d\u00e9charge toute son \u00e9nergie sur une \u00e9norme zone de d\u00e9g\u00e2ts. Vraiment, Zappy ne fait pas dans la dentelle."
+    },
+    {
+        "name": "Bowler",
+        "Points de vie": "2080",
+        "D\u00e9g\u00e2ts": "288",
+        "Vitesse de frappe": "2.5",
+        "Port\u00e9e": "4",
+        "Vitesse": "Lent",
+        "description": "Ce gros bonhomme bleu appr\u00e9cie les choses simples de la vie\u00a0: l'\u00e9lixir noir et le lancer de rochers. Ses \u00e9normes cailloux roulent sur leur cible, puis poursuivent leur course pour frapper toute autre cible sur leur chemin."
+    },
+    {
+        "name": "Lumberjack",
+        "Points de vie": "1282",
+        "D\u00e9g\u00e2ts": "242",
+        "Vitesse de frappe": "0.8",
+        "Vitesse": "Tr\u00e8s rapide",
+        "description": "Il abat des arbres le jour et poursuit la b\u00fbche la nuit. Son flacon de rage se renverse quand il est \u00e9limin\u00e9."
+    },
+    {
+        "name": "Battle Ram",
+        "Points de vie": "966",
+        "D\u00e9g\u00e2ts": "265",
+        "Vitesse": "Moyen",
+        "description": "Deux barbares utilisant un tronc comme b\u00e9lier pour charger le b\u00e2timent le plus proche. Ils infligent des d\u00e9g\u00e2ts importants s'ils atteignent leur cible, puis attaquent l'\u00e9p\u00e9e \u00e0 la main."
+    },
+    {
+        "name": "Inferno Dragon",
+        "Points de vie": "1294",
+        "D\u00e9g\u00e2ts": "36",
+        "Vitesse de frappe": "0.4",
+        "Port\u00e9e": "3.5",
+        "Vitesse": "Moyen",
+        "description": "Crache un faisceau de feu focalis\u00e9 dont les d\u00e9g\u00e2ts augmentent au fil du temps. Porte un casque, car voler n'est pas sans danger."
+    },
+    {
+        "name": "Ice Golem",
+        "Points de vie": "1197",
+        "D\u00e9g\u00e2ts": "84",
+        "Vitesse de frappe": "2.5",
+        "Vitesse": "Lent",
+        "description": "Costaud, il cible les b\u00e2timents et explose lorsqu'il est d\u00e9truit, ralentissant les ennemis \u00e0 proximit\u00e9. Il est enti\u00e8rement constitu\u00e9 de glace, pas vrai\u00a0? Absolument."
+    },
+    {
+        "name": "Mega Minion",
+        "Points de vie": "837",
+        "D\u00e9g\u00e2ts": "311",
+        "Vitesse de frappe": "1.5",
+        "Port\u00e9e": "2",
+        "Vitesse": "Moyen",
+        "description": "Cr\u00e9ature volante, cuirass\u00e9e et puissante. Une faiblesse\u00a0? Oui, pour les cupcakes."
+    },
+    {
+        "name": "Dart Goblin",
+        "Points de vie": "260",
+        "D\u00e9g\u00e2ts": "131",
+        "Vitesse de frappe": "0.7",
+        "Port\u00e9e": "6.5",
+        "Vitesse": "Tr\u00e8s rapide",
+        "description": "Court vite, tire loin et m\u00e2che du chewing-gum. Son secret pour souffler des fl\u00e9chettes la bouche pleine de chewing-gum magique\u00a0? Des ann\u00e9es de le\u00e7ons de didgeridoo."
+    },
+    {
+        "name": "Goblin Gang",
+        "Vitesse": "Tr\u00e8s rapide",
+        "description": "Six gobelins surgissent, trois arm\u00e9s de couteaux, trois arm\u00e9s de lances, pour un co\u00fbt en \u00e9lixir r\u00e9duit. C'est comme un pack \u00e9co pour gobelins\u00a0!"
+    },
+    {
+        "name": "Electro Wizard",
+        "Points de vie": "713",
+        "D\u00e9g\u00e2ts": "225",
+        "Vitesse de frappe": "1.8",
+        "Port\u00e9e": "5",
+        "Vitesse": "Rapide",
+        "description": "Il atterrit dans un grand FLASH\u00a0!, \u00e9tourdissant les ennemis \u00e0 proximit\u00e9, et lance des \u00e9clairs avec ses deux mains. Quel frimeur."
+    },
+    {
+        "name": "Elite Barbarians",
+        "Points de vie": "1341",
+        "D\u00e9g\u00e2ts": "384",
+        "Vitesse de frappe": "1.4",
+        "Vitesse": "Rapide",
+        "Nombre": "2",
+        "description": "Fait appara\u00eetre une paire de barbares au niveau boost\u00e9. Ils ressemblent aux barbares habituels, en plus costauds, plus beaux, plus rapides et plus forts."
+    },
+    {
+        "name": "Hunter",
+        "Points de vie": "838",
+        "D\u00e9g\u00e2ts": "848",
+        "Vitesse de frappe": "2.2",
+        "Port\u00e9e": "4",
+        "Vitesse": "Moyen",
+        "description": "Rod\u00e9 au combat au corps \u00e0 corps, mais pas tant la pr\u00e9cision. On lui pardonne, bien s\u00fbr, parce que des sourcils aussi fournis, \u00e7a se respecte\u00a0!"
+    },
+    {
+        "name": "Executioner",
+        "Points de vie": "1280",
+        "D\u00e9g\u00e2ts": "169",
+        "Vitesse de frappe": "2.4",
+        "Port\u00e9e": "4.5",
+        "Vitesse": "Moyen",
+        "description": "Il lance sa hache comme un boomerang, frappant tous les ennemis \u00e0 l'aller et au retour. C'est un miracle qu'il n'ait pas perdu un bras."
+    },
+    {
+        "name": "Bandit",
+        "Points de vie": "907",
+        "D\u00e9g\u00e2ts": "193",
+        "Vitesse de frappe": "1",
+        "Vitesse": "Rapide",
+        "description": "La voleuse fonce sur sa cible et lui ass\u00e8ne un coup tr\u00e8s fort. Quand elle charge, elle ne peut pas \u00eatre touch\u00e9e. Son masque dissimule son identit\u00e9... et lui donne beaucoup de classe\u00a0!"
+    },
+    {
+        "name": "Royal Recruits",
+        "Points de vie": "532",
+        "Bouclier": "240",
+        "D\u00e9g\u00e2ts": "133",
+        "Vitesse de frappe": "1.3",
+        "Vitesse": "Moyen",
+        "Nombre": "6",
+        "description": "D\u00e9ploie une ligne de recrues arm\u00e9es de lances, de boucliers et portant un seau en bois sur la t\u00eate. Leur r\u00eave\u00a0? Un poney et la chance de porter un jour un seau en m\u00e9tal sur la t\u00eate."
+    },
+    {
+        "name": "Night Witch",
+        "Points de vie": "907",
+        "D\u00e9g\u00e2ts": "314",
+        "Vitesse de frappe": "1.3",
+        "Vitesse": "Moyen",
+        "description": "Invoque des chauves-souris qui ob\u00e9issent \u00e0 ses ordres et n'h\u00e9site pas \u00e0 se servir de son redoutable b\u00e2ton si vous l'approchez de trop pr\u00e8s."
+    },
+    {
+        "name": "Bats",
+        "Points de vie": "81",
+        "D\u00e9g\u00e2ts": "81",
+        "Vitesse de frappe": "1.3",
+        "Vitesse": "Tr\u00e8s rapide",
+        "Nombre": "5",
+        "description": "G\u00e9n\u00e8re une poign\u00e9e de petites cr\u00e9atures volantes. Ce sont d'adorables petites boules... de destruction."
+    },
+    {
+        "name": "Royal Ghost",
+        "Points de vie": "1210",
+        "D\u00e9g\u00e2ts": "261",
+        "Vitesse de frappe": "1.8",
+        "Vitesse": "Rapide",
+        "description": "Invisible, il d\u00e9rive \u00e0 travers l'ar\u00e8ne, jusqu'\u00e0 ce qu'un ennemi le r\u00e9veille... Et il attaque\u00a0! Puis il redevient invisible. Zzzz..."
+    },
+    {
+        "name": "Ram Rider",
+        "Points de vie": "1767",
+        "D\u00e9g\u00e2ts": "266",
+        "Vitesse de frappe": "1.8",
+        "Port\u00e9e": "5.5",
+        "Vitesse": "Moyen",
+        "description": "Et les voil\u00e0 qui chargent \u00e0 travers l'ar\u00e8ne, pi\u00e8gent leurs ennemis, d\u00e9truisent les tours et... s'arr\u00eatent pour casser la cro\u00fbte\u00a0?!"
+    },
+    {
+        "name": "Zappies",
+        "Points de vie": "530",
+        "D\u00e9g\u00e2ts": "116",
+        "Vitesse de frappe": "2.1",
+        "Port\u00e9e": "4.5",
+        "Vitesse": "Moyen",
+        "Nombre": "3",
+        "description": "Fait appara\u00eetre des \u00e9lectrocuteurs miniatures contr\u00f4l\u00e9s par... En fait, seul le ma\u00eetre ouvrier le sait."
+    },
+    {
+        "name": "Rascals",
+        "Vitesse": "Moyen",
+        "description": "G\u00e9n\u00e8re un trio de fripons malicieux\u00a0! Le gar\u00e7on m\u00e8ne la charge, tandis que les filles utilisent leurs frondes pour bombarder les ennemis de chewing-gum magique."
+    },
+    {
+        "name": "Cannon Cart",
+        "Points de vie": "892",
+        "D\u00e9g\u00e2ts": "212",
+        "Vitesse de frappe": "0.9",
+        "Port\u00e9e": "5.5",
+        "Vitesse": "Moyen",
+        "description": "Un canon sur roues\u00a0? Je parie qu'ils ne l'ont pas vu venir\u00a0! Il perd ses roues lorsque son bouclier est bris\u00e9."
+    },
+    {
+        "name": "Mega Knight",
+        "Points de vie": "3993",
+        "D\u00e9g\u00e2ts": "268",
+        "Vitesse de frappe": "1.7",
+        "Vitesse": "Moyen",
+        "description": "Il atterrit avec la force de 1\u00a0000 moustaches, puis saute d'ennemi en ennemi en infligeant d'\u00e9normes d\u00e9g\u00e2ts de zone. Poussez-vous\u00a0!"
+    },
+    {
+        "name": "Skeleton Barrel",
+        "Points de vie": "532",
+        "D\u00e9g\u00e2ts mortels": "133",
+        "Vitesse": "Rapide",
+        "description": "C'est la f\u00eate des squelettes dans le ciel, jusqu'\u00e0 ce que tous les ballons \u00e9clatent... Ensuite, la f\u00eate des squelettes continue sur la terre ferme\u00a0!"
+    },
+    {
+        "name": "Flying Machine",
+        "Points de vie": "614",
+        "D\u00e9g\u00e2ts": "171",
+        "Vitesse de frappe": "1.1",
+        "Port\u00e9e": "6",
+        "Vitesse": "Rapide",
+        "description": "La premi\u00e8re machine du ma\u00eetre ouvrier a d\u00e9barqu\u00e9 dans l'ar\u00e8ne\u00a0! Il s'agit d'un engin volant rapide et amusant, mais fragile\u00a0!"
+    },
+    {
+        "name": "Wall Breakers",
+        "Points de vie": "331",
+        "D\u00e9g\u00e2ts": "392",
+        "Vitesse": "Tr\u00e8s rapide",
+        "Nombre": "2",
+        "description": "Un audacieux duo de sapeurs sans reproche, dont la plus grande passion est de faire p\u00e9ter des b\u00e2timents."
+    },
+    {
+        "name": "Royal Hogs",
+        "Points de vie": "837",
+        "D\u00e9g\u00e2ts": "74",
+        "Vitesse de frappe": "1.2",
+        "Vitesse": "Tr\u00e8s rapide",
+        "Nombre": "4",
+        "description": "Les animaux de compagnie du roi se sont \u00e9chapp\u00e9s\u00a0! Ils adorent m\u00e2chouiller des pommes ou des tours ennemies, selon l'envie."
+    },
+    {
+        "name": "Goblin Giant",
+        "Points de vie": "3336",
+        "D\u00e9g\u00e2ts": "176",
+        "Vitesse de frappe": "1.7",
+        "Vitesse": "Moyen",
+        "description": "Ce gobelin g\u00e9ant tout vert et tout joyeux avance lourdement vers les b\u00e2timents ennemis. Il transporte deux gobelins \u00e0 lances partout o\u00f9 il va. C'est un peu bizarre, mais \u00e7a marche."
+    },
+    {
+        "name": "Fisherman",
+        "Points de vie": "871",
+        "D\u00e9g\u00e2ts": "193",
+        "Vitesse de frappe": "1.3",
+        "Port\u00e9e": "7",
+        "Vitesse": "Moyen",
+        "description": "Ceinture noire de coup de bar, un art ancien myst\u00e9rieux. Son attaque \u00e0 distance lui permet d'attirer \u00e0 lui ses adversaires et de se hisser vers les b\u00e2timents ennemis."
+    },
+    {
+        "name": "Magic Archer",
+        "Points de vie": "532",
+        "D\u00e9g\u00e2ts": "134",
+        "Vitesse de frappe": "1.1",
+        "Port\u00e9e": "7",
+        "Vitesse": "Moyen",
+        "description": "Mi-sorcier, mi-archer, il tire une fl\u00e8che magique qui traverse tous les ennemis sur son passage en leur infligeant des d\u00e9g\u00e2ts. Aucun trucage, c'est magique\u00a0!"
+    },
+    {
+        "name": "Electro Dragon",
+        "Points de vie": "950",
+        "D\u00e9g\u00e2ts": "192",
+        "Vitesse de frappe": "2.1",
+        "Port\u00e9e": "3.5",
+        "Vitesse": "Moyen",
+        "description": "Crache des arcs \u00e9lectriques qui touchent jusqu'\u00e0 trois cibles. Moins mignon que le b\u00e9b\u00e9 dragon, moins farouche que le dragon de l'enfer, mais il m\u00e9rite quand m\u00eame qu'on s'y attache."
+    },
+    {
+        "name": "Firecracker",
+        "Points de vie": "304",
+        "D\u00e9g\u00e2ts": "320",
+        "Vitesse de frappe": "3",
+        "Port\u00e9e": "6",
+        "Vitesse": "Rapide",
+        "description": "Voil\u00e0 ce qui arrive si on laisse une arch\u00e8re trop s'ennuyer. Elle tire un feu d'artifice qui explose en une pluie d'\u00e9tincelles \u00e0 l'impact, infligeant des d\u00e9g\u00e2ts \u00e0 la cible et tout ce qui se trouve derri\u00e8re."
+    },
+    {
+        "name": "Mighty Miner",
+        "Points de vie": "2250",
+        "D\u00e9g\u00e2ts": "40",
+        "Vitesse de frappe": "0.4",
+        "Vitesse": "Moyen",
+        "description": "Il marche lentement... mais sa foreuse est \u00e9norme\u00a0! Ce champion inflige des d\u00e9g\u00e2ts croissants \u00e0 sa cible et peut changer de voie pour fuir le combat ou passer au plan\u00a0B. Il n'est pas que du muscle, c'est aussi un cerveau\u00a0!"
+    },
+    {
+        "name": "Elixir Golem",
+        "Points de vie": "1441",
+        "D\u00e9g\u00e2ts": "254",
+        "Vitesse de frappe": "1.1",
+        "Vitesse": "Lent",
+        "description": "Se divise en deux golemites d'\u00e9lixir une fois d\u00e9truit, qui \u00e0 leur tour, se s\u00e9parent en deux boules d'\u00e9lixir une fois vaincus. Quand votre adversaire d\u00e9truit une boule, il obtient de l'\u00e9lixir\u00a0!"
+    },
+    {
+        "name": "Battle Healer",
+        "Points de vie": "1717",
+        "D\u00e9g\u00e2ts": "148",
+        "Vitesse de frappe": "1.5",
+        "Vitesse": "Moyen",
+        "description": "\u00c0 chaque attaque, elle active son aura de gu\u00e9rison et restaure ses points de vie et ceux de ses alli\u00e9s. Lorsqu'elle ne combat pas, elle se gu\u00e9rit elle-m\u00eame."
+    },
+    {
+        "name": "Skeleton King",
+        "Points de vie": "2300",
+        "D\u00e9g\u00e2ts": "205",
+        "Vitesse de frappe": "1.6",
+        "Vitesse": "Moyen",
+        "description": "Le roi des morts-vivants en personne. Quand il se sent seul (peut-\u00eatre \u00e0 cause de son physique difficile), il invoque des amis qui combattent avec lui par-del\u00e0 la mort. M\u00eame les gros durs peuvent avoir un c\u0153ur tendre\u00a0!"
+    },
+    {
+        "name": "Archer Queen",
+        "Points de vie": "1000",
+        "D\u00e9g\u00e2ts": "225",
+        "Vitesse de frappe": "1.2",
+        "Port\u00e9e": "5",
+        "Vitesse": "Moyen",
+        "description": "Elle est rapide, mortelle et insaisissable. Attention \u00e0 ses carreaux d'arbal\u00e8te et ne clignez pas trop des yeux\u00a0: vous risqueriez de la rater\u00a0!"
+    },
+    {
+        "name": "Golden Knight",
+        "Points de vie": "1800",
+        "D\u00e9g\u00e2ts": "160",
+        "Vitesse de frappe": "0.9",
+        "Vitesse": "Moyen",
+        "description": "Un guerrier \u00e0 la chevelure aussi remarquable que sa souplesse. Il sera ravi de vous faire une d\u00e9monstration de ses talents de gymnaste."
+    },
+    {
+        "name": "Monk",
+        "Points de vie": "2000",
+        "D\u00e9g\u00e2ts": "140",
+        "Vitesse de frappe": "0.8",
+        "Vitesse": "Moyen",
+        "description": "Le Moine a v\u00e9cu en ermite pendant des ann\u00e9es pour parfaire son style de combat. Il utilise un combo de 3\u00a0coups sur ses ennemis, le dernier infligeant des d\u00e9g\u00e2ts suppl\u00e9mentaires et repoussant les ennemis."
+    },
+    {
+        "name": "Skeleton Dragons",
+        "Points de vie": "563",
+        "D\u00e9g\u00e2ts": "161",
+        "Vitesse de frappe": "1.9",
+        "Port\u00e9e": "3.5",
+        "Vitesse": "Rapide",
+        "Nombre": "2",
+        "description": "Ce duo de feu cause des d\u00e9g\u00e2ts de zone en survolant l'ar\u00e8ne. Le dimanche, ils jouent des percussions pour un cours de danse macabre."
+    },
+    {
+        "name": "Mother Witch",
+        "Points de vie": "532",
+        "D\u00e9g\u00e2ts": "133",
+        "Vitesse de frappe": "1",
+        "Port\u00e9e": "5.5",
+        "Vitesse": "Moyen",
+        "description": "Mamie sorci\u00e8re lance une mal\u00e9diction aux ennemis \u00e0 chaque attaque. Lorsqu'une troupe maudite est d\u00e9truite, elle se transforme en un cochon qui se bat aux c\u00f4t\u00e9s de la mamie sorci\u00e8re et cible les b\u00e2timents. \u00c0 part \u00e7a, elle fait aussi de tr\u00e8s bons g\u00e2teaux\u00a0!"
+    },
+    {
+        "name": "Electro Spirit",
+        "Points de vie": "230",
+        "D\u00e9g\u00e2ts": "99",
+        "Port\u00e9e": "2.5",
+        "Vitesse": "Tr\u00e8s rapide",
+        "description": "Il se jette gaiement sur les ennemis, \u00e9tourdissant jusqu'\u00e0 neuf unit\u00e9s et infligeant des d\u00e9g\u00e2ts de zone. En ce moment, il essaie aussi de se laisser pousser la moustache pour tenter de rivaliser avec le chevalier."
+    },
+    {
+        "name": "Electro Giant",
+        "Points de vie": "3856",
+        "D\u00e9g\u00e2ts": "163",
+        "Vitesse de frappe": "2.1",
+        "Vitesse": "Lent",
+        "description": "Gr\u00e2ce \u00e0 son Zap Pack dernier cri, l'\u00e9lectro-g\u00e9ant \u00e9tourdit et inflige des d\u00e9g\u00e2ts aux ennemis qui s'approchent de trop pr\u00e8s en les \u00e9lectrocutant. Attention, quiconque critique son style sera zapp\u00e9."
+    },
+    {
+        "name": "Phoenix",
+        "Points de vie": "1052",
+        "D\u00e9g\u00e2ts": "217",
+        "D\u00e9g\u00e2ts mortels": "163",
+        "Vitesse de frappe": "1",
+        "Vitesse": "Moyen",
+        "description": "Lorsqu'elle est \u00e0 terre, cette cr\u00e9ature mythique rena\u00eet sous la forme d'un \u0153uf. Si l'\u0153uf \u00e9clot, le ph\u00e9nix revient \u00e0 la vie\u00a0! Quel oiseau incroyable, quand m\u00eame\u00a0! Rena\u00eetre de ses cendres est fatigant, alors le ph\u00e9nix rena\u00eet avec moins de points de vie et de d\u00e9g\u00e2ts (80\u00a0% du total)."
+    },
+    {
+        "name": "Little Prince",
+        "Points de vie": "700",
+        "D\u00e9g\u00e2ts": "100",
+        "Vitesse de frappe": "1.2",
+        "Port\u00e9e": "6",
+        "Vitesse": "Moyen",
+        "description": "Qui a oubli\u00e9 son neveu dans l'ar\u00e8ne\u00a0?! Cette affreuse canaille princi\u00e8re gagne de la vitesse de frappe \u00e0 chaque tir, tant qu'elle reste immobile. Il a l'air faible, mais il est toujours surveill\u00e9 de loin..."
+    },
+    {
+        "name": "Cannon",
+        "Points de vie": "824",
+        "D\u00e9g\u00e2ts": "212",
+        "Vitesse de frappe": "0.9",
+        "Port\u00e9e": "5.5",
+        "description": "Dispositif de d\u00e9fense. Tire des boulets de canon aux effets meurtriers, mais ne peut pas cibler les combattants volants."
+    },
+    {
+        "name": "Goblin Hut",
+        "Points de vie": "848",
+        "description": "B\u00e2timent qui g\u00e9n\u00e8re des gobelins \u00e0 lances. Ne regardez pas \u00e0 l'int\u00e9rieur, vous ne voulez pas savoir de quoi ils sont faits\u00a0!"
+    },
+    {
+        "name": "Mortar",
+        "Points de vie": "1369",
+        "D\u00e9g\u00e2ts": "266",
+        "Vitesse de frappe": "5",
+        "Port\u00e9e": "11.5",
+        "description": "B\u00e2timent d\u00e9fensif \u00e0 longue port\u00e9e. Les rochers qu'il tire infligent des d\u00e9g\u00e2ts de zone. Il ne peut rien contre les cibles qui s'aventurent trop pr\u00e8s de lui."
+    },
+    {
+        "name": "Inferno Tower",
+        "Points de vie": "1749",
+        "D\u00e9g\u00e2ts": "42",
+        "Vitesse de frappe": "0.4",
+        "Port\u00e9e": "6",
+        "description": "Ce b\u00e2timent d\u00e9fensif fait r\u00f4tir ses cibles, leur infligeant des d\u00e9g\u00e2ts qui augmentent au fil du temps. M\u00eame les ennemis les plus imposants et robustes sont d\u00e9vor\u00e9s par ses flammes\u00a0!"
+    },
+    {
+        "name": "Bomb Tower",
+        "Points de vie": "1356",
+        "D\u00e9g\u00e2ts": "222",
+        "Vitesse de frappe": "1.8",
+        "Port\u00e9e": "6",
+        "description": "B\u00e2timent d\u00e9fensif \u00e9quip\u00e9 d'un bombardier. Inflige des d\u00e9g\u00e2ts de zone \u00e0 tout ce qui est assez b\u00eate pour l'approcher."
+    },
+    {
+        "name": "Barbarian Hut",
+        "Points de vie": "1166",
+        "description": "B\u00e2timent g\u00e9n\u00e9rant r\u00e9guli\u00e8rement des barbares pour affronter l'ennemi. \u00c0 vous les invasions barbares\u00a0!"
+    },
+    {
+        "name": "Tesla",
+        "Points de vie": "1152",
+        "D\u00e9g\u00e2ts": "230",
+        "Vitesse de frappe": "1.1",
+        "Port\u00e9e": "5.5",
+        "description": "B\u00e2timent d\u00e9fensif. Quand la tour Tesla n'\u00e9lectrocute pas l'ennemi, sa puissance \u00e9lectrisante est confin\u00e9e sous terre."
+    },
+    {
+        "name": "Elixir Collector",
+        "Points de vie": "1070",
+        "description": "Il faut d\u00e9penser de l'\u00e9lixir pour en produire. Au cours de sa p\u00e9riode d'activit\u00e9, ce b\u00e2timent produit 8\u00a0unit\u00e9s d'\u00e9lixir. Ne fait pas partie des cartes de d\u00e9part."
+    },
+    {
+        "name": "X-Bow",
+        "Points de vie": "1600",
+        "D\u00e9g\u00e2ts": "41",
+        "Vitesse de frappe": "0.3",
+        "Port\u00e9e": "11.5",
+        "description": "Quelle jolie tour vous avez l\u00e0. Il serait regrettable de voir cet arc-X la r\u00e9duire en poussi\u00e8re depuis ce c\u00f4t\u00e9 de l'ar\u00e8ne..."
+    },
+    {
+        "name": "Tombstone",
+        "Points de vie": "530",
+        "description": "B\u00e2timent qui d\u00e9ploie r\u00e9guli\u00e8rement des squelettes pour affronter l'ennemi. Sa destruction fait surgir 4\u00a0squelettes. Terrifiant\u00a0!"
+    },
+    {
+        "name": "Furnace",
+        "Points de vie": "848",
+        "description": "La fournaise g\u00e9n\u00e8re un esprit de feu \u00e0 la fois. Elle est aussi conseill\u00e9e pour les galettes cuites au feu de bois."
+    },
+    {
+        "name": "Goblin Cage",
+        "Points de vie": "742",
+        "description": "Lorsque la cage est d\u00e9truite, elle lib\u00e8re son gobelin f\u00e9lon. Et il n'est pas du genre \u00e0 rigoler."
+    },
+    {
+        "name": "Goblin Drill",
+        "Points de vie": "1440",
+        "description": "B\u00e2timent capable de se frayer un chemin souterrain pour ressurgir n'importe o\u00f9 dans l'ar\u00e8ne et invoquer des gobelins un par un. Lorsqu'elle est d\u00e9truite, la foreuse invoque quelques gobelins de plus, histoire de ne rien laisser au hasard."
+    },
+    {
+        "name": "Fireball",
+        "D\u00e9g\u00e2ts": "689",
+        "D\u00e9g\u00e2ts Tour couronn\u00e9e": "207",
+        "Rayon": "2.5",
+        "description": "Et bim, une boule de feu. Incin\u00e8re une petite zone, infligeant des d\u00e9g\u00e2ts \u00e9lev\u00e9s. D\u00e9g\u00e2ts r\u00e9duits sur les tours couronn\u00e9es."
+    },
+    {
+        "name": "Arrows",
+        "D\u00e9g\u00e2ts": "366",
+        "D\u00e9g\u00e2ts Tour couronn\u00e9e": "111",
+        "Rayon": "4",
+        "description": "Arrose de fl\u00e8ches une large zone, infligeant des d\u00e9g\u00e2ts \u00e0 tous les ennemis touch\u00e9s. D\u00e9g\u00e2ts r\u00e9duits sur les tours couronn\u00e9es."
+    },
+    {
+        "name": "Rage",
+        "D\u00e9g\u00e2ts": "192",
+        "D\u00e9g\u00e2ts Tour couronn\u00e9e": "58",
+        "Rayon": "3",
+        "Dur\u00e9e de vie": "5.5",
+        "description": "Acc\u00e9l\u00e8re le d\u00e9placement et la vitesse d'attaque des combattants. Les b\u00e2timents attaquent et invoquent des troupes plus rapidement. Chaaaargez\u00a0!"
+    },
+    {
+        "name": "Rocket",
+        "D\u00e9g\u00e2ts": "1484",
+        "D\u00e9g\u00e2ts Tour couronn\u00e9e": "371",
+        "Rayon": "2",
+        "description": "Inflige d'importants d\u00e9g\u00e2ts sur une petite zone. Et avec une classe in\u00e9gal\u00e9e. D\u00e9g\u00e2ts r\u00e9duits sur les tours couronn\u00e9es."
+    },
+    {
+        "name": "Goblin Barrel",
+        "Rayon": "1.5",
+        "description": "Fait surgir trois gobelins n'importe o\u00f9 dans l'ar\u00e8ne. On va s'\u00e9clater les gars\u00a0!"
+    },
+    {
+        "name": "Freeze",
+        "D\u00e9g\u00e2ts": "115",
+        "D\u00e9g\u00e2ts Tour couronn\u00e9e": "35",
+        "Rayon": "3",
+        "description": "Immobilise et inflige des d\u00e9g\u00e2ts aux combattants et b\u00e2timents ennemis qui ne peuvent plus se d\u00e9placer ou attaquer. Que personne ne bouge\u00a0! D\u00e9g\u00e2ts r\u00e9duits sur les tours couronn\u00e9es."
+    },
+    {
+        "name": "Mirror",
+        "description": "Reproduit la derni\u00e8re carte jou\u00e9e pour +1\u00a0unit\u00e9 d'\u00e9lixir. Ne fait pas partie des cartes de d\u00e9part."
+    },
+    {
+        "name": "Lightning",
+        "D\u00e9g\u00e2ts": "1056",
+        "D\u00e9g\u00e2ts Tour couronn\u00e9e": "317",
+        "Rayon": "3.5",
+        "description": "La foudre \u00e9tourdit et inflige des d\u00e9g\u00e2ts aux trois b\u00e2timents ou combattants ennemis ayant le plus de points de vie dans la zone cible. D\u00e9g\u00e2ts r\u00e9duits sur les tours couronn\u00e9es."
+    },
+    {
+        "name": "Zap",
+        "D\u00e9g\u00e2ts": "192",
+        "D\u00e9g\u00e2ts Tour couronn\u00e9e": "58",
+        "Rayon": "2.5",
+        "description": "Foudroie les ennemis, les \u00e9tourdit bri\u00e8vement et inflige des d\u00e9g\u00e2ts dans un faible rayon. D\u00e9g\u00e2ts r\u00e9duits sur les tours couronn\u00e9es."
+    },
+    {
+        "name": "Poison",
+        "D\u00e9g\u00e2ts": "728",
+        "D\u00e9g\u00e2ts Tour couronn\u00e9e": "224",
+        "Rayon": "3.5",
+        "Dur\u00e9e de vie": "8",
+        "description": "Recouvre la zone cibl\u00e9e d'une toxine mortelle qui inflige des d\u00e9g\u00e2ts aux combattants et b\u00e2timents ennemis au fil du temps. \u00c9tonnamment, l'herbe reste verte et \u00e9paisse sur son passage... D\u00e9g\u00e2ts r\u00e9duits sur les tours couronn\u00e9es."
+    },
+    {
+        "name": "Graveyard",
+        "Rayon": "4",
+        "Dur\u00e9e de vie": "10",
+        "description": "Surprise\u00a0! C'est la f\u00eate. La f\u00eate des squelettes, n'importe o\u00f9 dans l'ar\u00e8ne. Youpi\u00a0!"
+    },
+    {
+        "name": "The Log",
+        "D\u00e9g\u00e2ts": "290",
+        "D\u00e9g\u00e2ts Tour couronn\u00e9e": "58",
+        "description": "Un flacon de rage renvers\u00e9 a chang\u00e9 un tronc d'arbre innocent en La b\u00fbche. Maintenant, assoiff\u00e9 de vengeance, ce monstre \u00e9crase tout sur son passage\u00a0! D\u00e9g\u00e2ts r\u00e9duits sur les tours couronn\u00e9es."
+    },
+    {
+        "name": "Tornado",
+        "D\u00e9g\u00e2ts": "169",
+        "D\u00e9g\u00e2ts Tour couronn\u00e9e": "58",
+        "Rayon": "5.5",
+        "Dur\u00e9e de vie": "1",
+        "description": "Inflige des d\u00e9g\u00e2ts aux troupes ennemies apr\u00e8s les avoir attir\u00e9es en son centre comme un aimant. Un gros aimant-tornade tourbillonnant."
+    },
+    {
+        "name": "Clone",
+        "Rayon": "3",
+        "description": "Copie toutes les troupes alli\u00e9es de la zone cible. Les troupes clon\u00e9es sont fragiles, mais tout aussi efficaces que les originales. N'affecte pas les b\u00e2timents."
+    },
+    {
+        "name": "Earthquake",
+        "D\u00e9g\u00e2ts": "246",
+        "D\u00e9g\u00e2ts Tour couronn\u00e9e": "162",
+        "D\u00e9g\u00e2ts sur b\u00e2timents": "864",
+        "Rayon": "3.5",
+        "Dur\u00e9e de vie": "3",
+        "description": "Inflige des d\u00e9g\u00e2ts par seconde aux troupes et aux tours couronn\u00e9es. Ce sort fait tr\u00e8s, tr\u00e8s mal aux b\u00e2timents, mais n'affecte pas les unit\u00e9s volantes\u00a0!"
+    },
+    {
+        "name": "Barbarian Barrel",
+        "D\u00e9g\u00e2ts": "241",
+        "description": "Il roule sur tout ce qui se trouve sur son passage en infligeant des d\u00e9g\u00e2ts, puis un barbare en sort quand il se brise. Comment s'est-il faufil\u00e9 l\u00e0-dedans\u00a0?"
+    },
+    {
+        "name": "Heal Spirit",
+        "Points de vie": "231",
+        "D\u00e9g\u00e2ts": "110",
+        "Port\u00e9e": "2.5",
+        "Vitesse": "Tr\u00e8s rapide",
+        "description": "Esprit espi\u00e8gle qui adore faire des c\u00e2lins aux ennemis, leur infligeant des d\u00e9g\u00e2ts et laissant derri\u00e8re lui un sort de soin pour ses alli\u00e9s. Au revoir, sort de gu\u00e9rison\u00a0! On t'aimait bien... Mais on t'utilisait pas..."
+    },
+    {
+        "name": "Giant Snowball",
+        "D\u00e9g\u00e2ts": "179",
+        "D\u00e9g\u00e2ts Tour couronn\u00e9e": "54",
+        "Rayon": "2.5",
+        "description": "On dit qu'elle a commenc\u00e9 \u00e0 rouler du haut du sommet glac\u00e9 et ne s'est jamais arr\u00eat\u00e9e depuis, percutant et ralentissant les ennemis sur son chemin... D\u00e9g\u00e2ts r\u00e9duits sur les tours couronn\u00e9es."
+    },
+    {
+        "name": "Royal Delivery",
+        "D\u00e9g\u00e2ts": "437",
+        "Rayon": "3",
+        "description": "Pas d'accus\u00e9 de r\u00e9ception n\u00e9cessaire. Livr\u00e9 par les airs, le colis inflige des d\u00e9g\u00e2ts de zone, avant de lib\u00e9rer une recrue royale. La bo\u00eete vide est aussi tr\u00e8s pratique pour l'espionnage."
+    }
+]

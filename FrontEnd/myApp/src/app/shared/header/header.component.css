@@ -1,0 +1,39 @@
+@font-face {
+    font-family: 'Royale';
+    src: url('../../../assets/fonts/You_Blockhead.ttf') format('truetype');
+}
+
+.title {
+    background-color: transparent;
+    text-align: center;
+    font-size: 300%;
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.title img {
+    width: 25%;
+    height: auto;
+}
+
+.yellow {
+    color: #FFD700;
+}
+
+@media (max-width: 870px) {
+    .title img {
+        display: none;
+    }
+}
+
+section{
+    margin: 2%;
+}
+
+h1 {
+    font-family: 'Royale';
+    color: white;
+}
