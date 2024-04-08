@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrl: './map.component.css'
 })
 export class MapComponent {
+  showKing: number = 1;
 
+  onMouseMove(event: MouseEvent) {
+    this.showKing = 1;
+  }
 }

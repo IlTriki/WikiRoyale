@@ -1,13 +1,27 @@
-<div class="bg-image">
-    <app-header></app-header>
-</div>
-
-<div class="text-bottom-right"><p>C'est ici que les cartes du deck apparaissent, les joueurs peuvent n'en choisir que quatre par quatre pour les utiliser pendant le combat.</p></div>
-<div class="text-top-right"><p>A gauche, on voit les tours ennemies avec leurs points de vie respectifs</p></div>
-<div class="text-middle-left"><p>On peut placer nos troupes de l'arrière de nos tours jusqu'à l'entrée du pont</p></div>
-<div class="text-bottom-left"><p>On voit la barre d'elexir, on peut avoir que 10 gouttes maximum</p></div>
-<div class="text-timer"><p>ici, le timer. Une partie dure 3 minutes.</p></div>
-
-<div class="title">
-        <img src="../../assets/images/map.jpg" alt="" id="map">
+<app-header></app-header>
+<div class="map-div">
+    <img src="../../assets/images/bienvenue.png" alt="blue king" class="king" *ngIf="showKing === 1">
+    <img src="../../assets/images/cartes.png" alt="" class="king" *ngIf="showKing === 2">
+    <img src="../../assets/images/objectif.png" alt="" class="king" *ngIf="showKing === 3">
+    <img src="../../assets/images/pror_carte.png" alt="" class="king" *ngIf="showKing === 4">
+    <img src="../../assets/images/elixir_exp.png" alt="" class="king" *ngIf="showKing === 5">
+    <img src="../../assets/images/map.jpg" alt="" id="map" usemap="#image-map" (mousemove)="onMouseMove($event)">
+    <map name="image-map">
+        <area shape="circle" coords="250,510,34" alt="King 2" (mouseenter)="showKing = 2">
+        <area shape="circle" coords="220,510,34" alt="King 2" (mouseenter)="showKing = 2">
+        <area shape="circle" coords="160,510,34" alt="King 2" (mouseenter)="showKing = 2">
+        <area shape="circle" coords="100,510,34" alt="King 2" (mouseenter)="showKing = 2">
+        <area shape="circle" coords="50,110,30" alt="King 3" (mouseenter)="showKing = 3">
+        <area shape="circle" coords="230,110,30" alt="King 3" (mouseenter)="showKing = 3">
+        <area shape="circle" coords="150,75,40" alt="King 3" (mouseenter)="showKing = 3">
+        <area shape="circle" coords="25,550,25" alt="King 4" (mouseenter)="showKing = 4">
+        <area shape="circle" coords="70,560,15" alt="King 5" (mouseenter)="showKing = 5">
+        <area shape="circle" coords="100,560,15" alt="King 5" (mouseenter)="showKing = 5">
+        <area shape="circle" coords="130,560,15" alt="King 5" (mouseenter)="showKing = 5">
+        <area shape="circle" coords="160,560,15" alt="King 5" (mouseenter)="showKing = 5">
+        <area shape="circle" coords="190,560,15" alt="King 5" (mouseenter)="showKing = 5">
+        <area shape="circle" coords="220,560,15" alt="King 5" (mouseenter)="showKing = 5">
+        <area shape="circle" coords="250,560,15" alt="King 5" (mouseenter)="showKing = 5">
+        <area shape="circle" coords="280,560,15" alt="King 5" (mouseenter)="showKing = 5">
+    </map>
 </div>

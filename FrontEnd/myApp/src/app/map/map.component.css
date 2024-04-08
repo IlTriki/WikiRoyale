@@ -3,7 +3,7 @@
     src: url('../../assets/fonts/You_Blockhead.ttf') format('truetype');
 }
 
-.title {
+.map-div {
     background-color: transparent;
     text-align: center;
     font-size: 300%;
@@ -14,28 +14,13 @@
     align-items: center;
 }
 
-.title img {
-    width: 35%;
-    height: auto;
+#map {
+    height: 600px;
 }
 
-@media (max-width: 870px) {
-    .title img {
-        display: none;
-    }
-
-    .overlay{
-        animation : fade 3s infinite alternate;
-    }
-
-    @keyframes fade {
-        0% {
-            opacity: 0;
-        }
-        100% {
-            opacity: 1;
-        }
-    }
+.king {
+    height: 600px;
+    width: auto;
 }
 
 
