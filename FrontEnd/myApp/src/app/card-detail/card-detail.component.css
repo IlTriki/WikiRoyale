@@ -28,6 +28,26 @@
     }
 }
 
+.btnRetour{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 4%;
+}
+
+button {
+    font-family: 'Royale';
+    font-size: 16px;
+    border: 2px solid #0c3351;
+    border-radius: 8px;
+    padding: 8px 16px;
+    background-color: #4d739e;
+    color: white;
+    outline: none;
+    cursor: pointer;
+    appearance: none;
+}
+
 .yellow {
     color: #FFD700;
 }
@@ -75,7 +95,7 @@
     color: rgba(0, 0, 0, 0.5);
 }
 
-button {
+.card-body button {
     font-size: 24px;
     background: none;
     border: none;
@@ -175,38 +195,6 @@ button {
     display: block;
     width: 100%;
     height: auto;
-}
-
-
-.details {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    position: relative;
-}
-
-.details button {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    display: none;
-    transition: opacity 0.3s ease;
-    z-index: 1;
-}
-
-.details p {
-    opacity: 1;
-    transition: opacity 0.3s ease;
-    position: relative;
-}
-
-.details:hover button {
-    display: block;
-}
-
-.details:hover p {
-    opacity: 0;
 }
 
 p, h1, h2 {
