@@ -15,6 +15,7 @@ export class CardDetailComponent implements OnInit{
   private _cardInfo: CardInfo | null = null;
   private _card: Card | null = null;
   private _cardName: string|null = null;
+  private _showFirst: boolean = true;
 
 
   constructor(private _http: HttpClient, private _route: ActivatedRoute) {
@@ -57,5 +58,21 @@ export class CardDetailComponent implements OnInit{
 
   get cardName(): string | null {
     return this._cardName;
+  }
+
+  get showFirst(): boolean {
+    return this._showFirst;
+  }
+
+  toggleSlides() {
+    this._showFirst = !this._showFirst;
+  }
+
+  getObjectKeys(obj: any): string[] {
+    return Object.keys(obj);
+  }
+
+  getValueByKey(obj: any, key: string): any {
+    return obj[key];
   }
 }

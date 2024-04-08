@@ -14,9 +14,14 @@
     align-items: center;
 }
 
+.title h1{
+    cursor: pointer;
+}
+
 .title img {
     width: 25%;
     height: auto;
+    cursor: pointer;
 }
 
 .yellow {
