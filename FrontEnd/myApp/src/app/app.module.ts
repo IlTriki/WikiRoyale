@@ -16,6 +16,8 @@ import { CardComponent } from './shared/card/card.component';
 import { MapComponent } from './map/map.component';
 import { CardDetailComponent } from './card-detail/card-detail.component';
 import { HeaderComponent } from './shared/header/header.component';
+import { DeckComponent } from './deck/deck.component';
+import { DetailComponent } from './shared/detail/detail.component';
 
 
 
@@ -31,6 +33,8 @@ import { HeaderComponent } from './shared/header/header.component';
     MapComponent,
     CardDetailComponent,
     HeaderComponent,
+    DeckComponent,
+    DetailComponent,
   ],
   imports: [
     BrowserModule,

@@ -1,5 +1,13 @@
 <div class="bg-image">
     <app-header></app-header>
+    <section>
+        <h2>Deck</h2>
+        <div class="cards-div">
+            <div class = "card-container" *ngFor="let card of deck">
+                <app-card [card]="card" (contextmenu)="removeFromDeck(card)"></app-card>
+            </div>
+        </div>
+    </section>
     <section id="sorting" >
         <select name="sorting" (change)="onSortChange($event)">
             <option value="default" selected>Default</option>
@@ -12,8 +20,7 @@
         <h2>Tower troops</h2>
         <div class="cards-div">
             <div class = "card-container" *ngFor="let card of getCardsByType('tower troop')">
-                <app-card [card]="card"></app-card>
-                <app-detail [card]="card"></app-detail>
+                <app-card [card]="card" (click)="addToDeck(card)"></app-card>
             </div>
         </div>
     </section>
@@ -21,8 +28,7 @@
         <h2>Troops</h2>
         <div class="cards-div">
             <div class = "card-container" *ngFor="let card of getCardsByType('troop')">
-                <app-card [card]="card"></app-card>
-                <app-detail [card]="card"></app-detail>
+                <app-card [card]="card" (click)="addToDeck(card)"></app-card>
             </div>
         </div>
     </section>
@@ -30,8 +36,7 @@
         <h2>Buildings</h2>
         <div class="cards-div">
             <div class = "card-container" *ngFor="let card of getCardsByType('building')">
-                <app-card [card]="card"></app-card>
-                <app-detail [card]="card"></app-detail>
+                <app-card [card]="card" (click)="addToDeck(card)"></app-card>
             </div>
         </div>
     </section>
@@ -39,8 +44,7 @@
         <h2>Spells</h2>
         <div class="cards-div">
             <div class = "card-container" *ngFor="let card of getCardsByType('spell')">
-                <app-card [card]="card"></app-card>
-                <app-detail [card]="card"></app-detail>
+                <app-card [card]="card" (click)="addToDeck(card)"></app-card>
             </div>
         </div>
     </section>

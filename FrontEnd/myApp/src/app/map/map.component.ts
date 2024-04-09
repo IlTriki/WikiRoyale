@@ -8,7 +8,7 @@ import { Component } from '@angular/core';
 export class MapComponent {
   showKing: number = 1;
 
-  onMouseMove(event: MouseEvent) {
+  onMouseMove() {
     this.showKing = 1;
   }
 }
