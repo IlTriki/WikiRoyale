@@ -1,10 +1,18 @@
 <div class="bg-image">
-    <app-header></app-header>
+    
     <section>
         <h2>Deck</h2>
-        <div class="cards-div">
-            <div class = "card-container" *ngFor="let card of deck">
-                <app-card [card]="card" (contextmenu)="removeFromDeck(card)"></app-card>
+        <div class="deck">
+            <div class="deck-slots">
+                <app-card [card]="card" *ngFor="let card of deck" (contextmenu)="removeFromDeck(card, $event)"></app-card>
+                <img *ngFor="let _ of emptySlots()" src="../../assets/images/card_blank.png" alt="" class="empty-slot-icon">
+            </div>
+            <div class="deck-buttons">
+                <div class="elixir-moyenne">
+                    <img src="../../assets/images/Elixir.svg" alt="" class="elixir-moyenne-icon">
+                    <p class="elixir-moyenne">{{ moyenneElixir() }}</p>
+                </div>
+                <button *ngIf="deck.length == 8" (click)="exportDeck()">exporter</button>
             </div>
         </div>
     </section>
@@ -16,15 +24,7 @@
             <option value="rarity">Rarity</option>
         </select>        
     </section>
-    <section *ngIf="!elixir && (!type || type.toLowerCase() =='tower troop')">
-        <h2>Tower troops</h2>
-        <div class="cards-div">
-            <div class = "card-container" *ngFor="let card of getCardsByType('tower troop')">
-                <app-card [card]="card" (click)="addToDeck(card)"></app-card>
-            </div>
-        </div>
-    </section>
-    <section *ngIf="!type || type.toLowerCase()=='troop'">
+    <section>
         <h2>Troops</h2>
         <div class="cards-div">
             <div class = "card-container" *ngFor="let card of getCardsByType('troop')">
@@ -32,7 +32,7 @@
             </div>
         </div>
     </section>
-    <section *ngIf="!type || type.toLowerCase() =='building'">
+    <section>
         <h2>Buildings</h2>
         <div class="cards-div">
             <div class = "card-container" *ngFor="let card of getCardsByType('building')">
@@ -40,7 +40,7 @@
             </div>
         </div>
     </section>
-    <section *ngIf="!type || type.toLowerCase() =='spell'">
+    <section>
         <h2>Spells</h2>
         <div class="cards-div">
             <div class = "card-container" *ngFor="let card of getCardsByType('spell')">

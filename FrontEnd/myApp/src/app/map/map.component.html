@@ -1,17 +1,16 @@
-<app-header></app-header>
+
 <div class="map-div">
-    <img src="../../assets/images/bienvenue.png" alt="blue king" class="king" *ngIf="showKing === 1">
-    <img src="../../assets/images/cartes.png" alt="" class="king" *ngIf="showKing === 2">
-    <img src="../../assets/images/objectif.png" alt="" class="king" *ngIf="showKing === 3">
-    <img src="../../assets/images/pror_carte.png" alt="" class="king" *ngIf="showKing === 4">
-    <img src="../../assets/images/elixir_exp.png" alt="" class="king" *ngIf="showKing === 5">
+    <div class="speech" [style.left.%]="42" [style.top.%]="45">
+        <p>{{ kingSpeech }}</p>
+    </div>    
+    <img src="../../assets/images/blue_king_template.png" alt="blue king" class="king" id="king">
     <img src="../../assets/images/map.jpg" alt="" id="map" usemap="#image-map" (mousemove)="onMouseMove()">
     <map name="image-map">
-        <area shape="rect" coords="284,544,66,476" alt="King 2" (mouseenter)="showKing = 2">
-        <area shape="circle" coords="50,110,30" alt="King 3" (mouseenter)="showKing = 3">
-        <area shape="circle" coords="230,110,30" alt="King 3" (mouseenter)="showKing = 3">
-        <area shape="circle" coords="150,75,40" alt="King 3" (mouseenter)="showKing = 3">
-        <area shape="circle" coords="25,550,25" alt="King 4" (mouseenter)="showKing = 4">
-        <area shape="rect" coords="65,550,285,570" alt="King 5" (mouseenter)="showKing = 5">
+        <area shape="rect" coords="284,544,66,476" alt="King 1" (mouseenter)="setSpeech(1)">
+        <area shape="circle" coords="50,110,30" alt="King 2" (mouseenter)="setSpeech(2)">
+        <area shape="circle" coords="230,110,30" alt="King 2" (mouseenter)="setSpeech(2)">
+        <area shape="circle" coords="150,75,40" alt="King 2" (mouseenter)="setSpeech(2)">
+        <area shape="circle" coords="25,550,25" alt="King 3" (mouseenter)="setSpeech(3)">
+        <area shape="rect" coords="65,550,285,570" alt="King 4" (mouseenter)="setSpeech(4)">
     </map>
 </div>

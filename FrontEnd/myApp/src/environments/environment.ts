@@ -14,6 +14,7 @@ export const environment = {
         rarity: '/cards/rarity',
         type: '/cards/type',
         cardByName: '/cards/name',
+        randomCard: '/cards/random',
         cardDetailByName: '/card-detail/name',
         allEmotes: '/emotes',
         randomEmote: '/emotes/random',

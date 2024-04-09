@@ -13,69 +13,28 @@ export class DeckComponent {
   private _cards: Card[];
   private _deck: Card[];
   private readonly _backendURL: any;
-  private elixirValue: string | null = null;
-  private rarityValue: string | null = null;
-  private typeValue: string | null = null;
 
   constructor(private _http: HttpClient, private _route: ActivatedRoute) {
     this._cards = [];
     this._deck = [];
-    this._backendURL = {};
-
+    
     let baseUrl = `${environment.backend.protocol}://${environment.backend.host}`;
     if (environment.backend.port) {
       baseUrl += `:${environment.backend.port}`;
     }
 
-    // build all backend urls
-    // @ts-ignore
-    Object.keys(environment.backend.endpoints).forEach(k => this._backendURL[ k ] = `${baseUrl}${environment.backend.endpoints[ k ]}`);
+    this._backendURL = `${baseUrl}${environment.backend.endpoints.randomCard}`;
   }
 
   ngOnInit(): void {
-    this.elixirValue = this._route.snapshot.paramMap.get('elixirValue');
-    this.rarityValue = this._route.snapshot.paramMap.get('rarity');
-    this.typeValue = this._route.snapshot.paramMap.get('type');
-  
-    if (this.elixirValue) {
-      const url = `${this._backendURL.elixir}/${this.elixirValue}`;
-      this._http.get<Card[]>(url).subscribe({
-        next: (cards: Card[]) => this._cards = cards,
-        error: (error: any) => console.error('Error fetching cards:', error)
-      });
-    } else if (this.rarityValue) {
-      const url = `${this._backendURL.rarity}/${this.rarityValue}`;
-      this._http.get<Card[]>(url).subscribe({
-        next: (cards: Card[]) => this._cards = cards,
-        error: (error: any) => console.error('Error fetching cards:', error)
-      });
-    } else if (this.typeValue) {
-      this._http.get<Card[]>(`${this._backendURL.type}/${this.typeValue}`).subscribe({
-        next: (cards: Card[]) => this._cards = cards,
-        error: (error: any) => console.error('Error fetching cards:', error)
-      });
-    } else {
-      this._http.get<Card[]>(this._backendURL.allCards).subscribe({
-        next: (cards: Card[]) => this._cards = cards,
-        error: (error: any) => console.error('Error fetching cards:', error)
-      });
-    }
+    this._http.get<Card[]>(this._backendURL.allCards).subscribe({
+      next: (cards: Card[]) => this._cards = cards,
+      error: (error: any) => console.error('Error fetching cards:', error)
+    });
   }  
 
   get cards(): Card[] {
     return this._cards;
-  }
-
-  get elixir(): string | null {
-    return this.elixirValue;
-  }
-
-  get rarity() : string | null {
-    return this.rarityValue;
-  }
-
-  get type() : string | null {
-    return this.typeValue;
   }
 
   get deck(): Card[] {
@@ -92,14 +51,6 @@ export class DeckComponent {
 
   getCardsByType(type: string): Card[] {
     return this._cards.filter(c => c.type === type);
-  }
-
-  getCardsByElixir(elixir: string): void {
-    this._http.get<Card[]>(`${this._backendURL.cardsByElixir}/${elixir}`)
-      .subscribe(cards => {
-        this._cards = cards;
-        this.sortCards('default');
-      });
   }
 
   sortCards(criteria: string): void {
@@ -131,11 +82,50 @@ export class DeckComponent {
   }
 
   addToDeck(card: Card): void {
-    this.deck.length < 8 ? this._deck.push(card) : alert('Deck is full!');
-    this._deck.push(card);
+    if (this.deck.length < 8) {
+        const index = this._cards.findIndex(c => c.id === card.id);
+        if (index !== -1) {
+            this._cards.splice(index, 1);
+            this._deck.push(card);
+        }
+    } else {
+        alert('Le deck est rempli !');
+    }
   }
 
-  removeFromDeck(card: Card): void {
-    this._deck = this._deck.filter(c => c.id !== card.id);
+  removeFromDeck(card: Card, event: MouseEvent): void {
+    event.preventDefault();
+    const index = this._deck.findIndex(c => c.id === card.id);
+    if (index !== -1) {
+        this._deck.splice(index, 1);
+        this._cards.push(card);
+    }
   }
+
+  exportDeck(): void {
+    if (this.deck.length == 8) {
+      let url = 'https://link.clashroyale.com/deck/fr/?deck=';
+      this.deck.forEach(element => {
+        url += `${element.id};`;
+      });
+      window.open(url, '_blank');
+    } else {
+      alert('Le deck n\'est pas rempli !');
+    }
+  }
+
+  moyenneElixir(): number {
+    let sum = 0;
+    this._deck.forEach(element => {
+      element.elixirCost ? sum += element.elixirCost : 0;
+    });
+    return sum == 0 ? 0 : parseFloat((sum / this._deck.length).toFixed(2));
+  }
+
+  emptySlots(): number[] {
+    const totalSlots = 8;
+    const filledSlots = this.deck.length;
+    return Array(totalSlots - filledSlots).fill(0);
+  }
+
 }
