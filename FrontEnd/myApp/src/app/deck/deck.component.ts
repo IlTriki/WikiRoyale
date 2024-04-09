@@ -1,6 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Component } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
+import { concatMap, Observable, of } from 'rxjs';
 import { environment } from '../../environments/environment';
 import { Card } from '../shared/types/card.type';
 
@@ -17,13 +18,16 @@ export class DeckComponent {
   constructor(private _http: HttpClient, private _route: ActivatedRoute) {
     this._cards = [];
     this._deck = [];
-    
+    this._backendURL = {};
+
     let baseUrl = `${environment.backend.protocol}://${environment.backend.host}`;
     if (environment.backend.port) {
       baseUrl += `:${environment.backend.port}`;
     }
 
-    this._backendURL = `${baseUrl}${environment.backend.endpoints.randomCard}`;
+    // build all backend urls
+    // @ts-ignore
+    Object.keys(environment.backend.endpoints).forEach(k => this._backendURL[ k ] = `${baseUrl}${environment.backend.endpoints[ k ]}`);
   }
 
   ngOnInit(): void {
@@ -119,7 +123,7 @@ export class DeckComponent {
     this._deck.forEach(element => {
       element.elixirCost ? sum += element.elixirCost : 0;
     });
-    return sum == 0 ? 0 : parseFloat((sum / this._deck.length).toFixed(2));
+    return sum == 0 ? 0 : parseFloat((sum / this._deck.length).toFixed(1));
   }
 
   emptySlots(): number[] {
@@ -127,5 +131,32 @@ export class DeckComponent {
     const filledSlots = this.deck.length;
     return Array(totalSlots - filledSlots).fill(0);
   }
+
+  getRandomCard(): Observable<Card> {
+    return this._http.get<Card>(this._backendURL.randomCard).pipe(
+      concatMap((card: Card) => {
+        this.addToDeck(card);
+        return of(card);
+      })
+    );
+  }
+
+  populateRandomDeck(): void {
+    this._cards.push(...this._deck);
+    this._deck = [];
+  
+    const addRandomCard = () => {
+      if (this._deck.length < 8) {
+        this.getRandomCard().subscribe({
+          complete: () => addRandomCard(),
+          error: (error: any) => console.error('Error adding random card:', error)
+        });
+      }
+    };
+  
+    addRandomCard();
+  }
+  
+  
 
 }

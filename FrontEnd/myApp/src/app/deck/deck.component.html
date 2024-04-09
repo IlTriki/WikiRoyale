@@ -12,7 +12,8 @@
                     <img src="../../assets/images/Elixir.svg" alt="" class="elixir-moyenne-icon">
                     <p class="elixir-moyenne">{{ moyenneElixir() }}</p>
                 </div>
-                <button *ngIf="deck.length == 8" (click)="exportDeck()">exporter</button>
+                <button (click)="populateRandomDeck()">deck random</button>
+                <button (click)="exportDeck()">exporter</button>
             </div>
         </div>
     </section>

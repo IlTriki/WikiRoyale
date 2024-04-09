@@ -224,5 +224,11 @@ option {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+}
 
+.deck-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 20px;
 }

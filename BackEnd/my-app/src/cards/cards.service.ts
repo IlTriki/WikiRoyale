@@ -34,13 +34,19 @@ export class CardsService {
     );
 
   /**
-   * Returns randomly one Card of the list
+   * Returns randomly one Card of the list that isn't a tower troop
    *
    * @returns {Observable<Card | void>}
    */
   findRandom = (): Observable<Card | void> =>
-    of(this._cards[Math.round(Math.random() * this._cards.length)]).pipe(
-      map((Card: Card) => (!!Card ? Card : undefined)),
+    of(this._cards).pipe(
+      map((cards: Card[]) =>
+        cards.filter((card: Card) => card.type.toLowerCase() !== 'tower troop'),
+      ),
+      map((cards: Card[]) =>
+        cards[Math.floor(Math.random() * cards.length)],
+      ),
+      map((card: Card) => (!!card ? card : undefined)),
     );
 
   /**
@@ -82,12 +88,4 @@ export class CardsService {
           cards.filter((card: Card) => card.type.toLowerCase() === type.toLowerCase()),
         ),
       );
-
-  /**
-   * Check if Card already exists and add it in cards list
-   *
-   * @param Card to create
-   *
-   * @returns {Observable<Card>}
-   */
 }
