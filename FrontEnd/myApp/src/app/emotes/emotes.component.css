@@ -35,10 +35,9 @@ section {
 
 
 .container {
-    position: relative;
-    display: inline-block;
-    width: 100%;
-    max-width: 170px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Colonne de largeur minimale de 250px */
+    gap: 10px; /* Espacement entre les éléments */
 }
 
 .image {
