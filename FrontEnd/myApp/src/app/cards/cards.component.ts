@@ -85,8 +85,19 @@ export class CardsComponent implements OnInit {
   }
 
   getCardsByType(type: string): Card[] {
-    return this._cards.filter(c => c.type === type);
-  }
+    let filteredCards = this._cards;
+  
+    if (type && type.trim() !== "") {
+      filteredCards = filteredCards.filter(card => card.type.toLowerCase() === type.toLowerCase());
+    }
+  
+    if (this.elixirValue && this.elixirValue.trim() !== "") {
+      const elixirValue = parseInt(this.elixirValue, 10);
+      filteredCards = filteredCards.filter(card => card.elixirCost === elixirValue);
+    }
+  
+    return filteredCards;
+  }  
 
   getCardsByElixir(elixir: string): void {
     this._http.get<Card[]>(`${this._backendURL.cardsByElixir}/${elixir}`)
@@ -122,5 +133,19 @@ export class CardsComponent implements OnInit {
   onSortChange(event: any): void {
     const selectedValue = event.target.value;
     this.sortCards(selectedValue);
+  }
+
+  onTypeChange(event: any): void {
+    const selectedValue = event.target.value;
+    selectedValue === "default" ? this.typeValue = null : this.typeValue = selectedValue;
+  }
+
+  onElixirChange(event: any): void {
+    const selectedValue = event.target.value;
+    if (selectedValue < 1 && selectedValue > 9 || selectedValue == "") {
+      this.elixirValue = null;
+    } else {
+      this.elixirValue = selectedValue.toString();
+    }
   }
 }

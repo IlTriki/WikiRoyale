@@ -1,5 +1,15 @@
 <div class="bg-image">
     <section id="sorting" >
+        <section name="filter">
+            <select name="type" (change)="onTypeChange($event)">
+                <option value="default" selected>Default</option>
+                <option value="troop">Troop</option>
+                <option value="building">Building</option>
+                <option value="spell">Spell</option>
+                <option value="tower troop">Tower Troop</option>
+            </select>
+            <input class="elixir-input" type="number" name="elixir" placeholder="elixir" (change)="onElixirChange($event)">
+        </section>
         <select name="sorting" (change)="onSortChange($event)">
             <option value="default" selected>Default</option>
             <option value="name">Name</option>
@@ -16,7 +26,7 @@
             </div>
         </div>
     </section>
-    <section *ngIf="!type || type.toLowerCase()=='troop'">
+    <section *ngIf="(!type || type.toLowerCase()=='troop') && getCardsByType('troop').length != 0">
         <h2>Troops</h2>
         <div class="cards-div">
             <div class = "card-container" *ngFor="let card of getCardsByType('troop')">
@@ -25,7 +35,7 @@
             </div>
         </div>
     </section>
-    <section *ngIf="!type || type.toLowerCase() =='building'">
+    <section *ngIf="(!type || type.toLowerCase() =='building') && getCardsByType('building').length != 0">
         <h2>Buildings</h2>
         <div class="cards-div">
             <div class = "card-container" *ngFor="let card of getCardsByType('building')">
@@ -34,7 +44,7 @@
             </div>
         </div>
     </section>
-    <section *ngIf="!type || type.toLowerCase() =='spell'">
+    <section *ngIf="(!type || type.toLowerCase() =='spell') && getCardsByType('spell').length != 0">
         <h2>Spells</h2>
         <div class="cards-div">
             <div class = "card-container" *ngFor="let card of getCardsByType('spell')">

@@ -24,7 +24,6 @@
     flex-direction: column;
 }
 
-
 .elixir {
     position: absolute;
     top: 0;
@@ -33,7 +32,6 @@
     height: 100%;
     z-index: 1;
 }
-
 
 .elixir-icon {
     position: absolute;
@@ -51,7 +49,6 @@
     font-size: 100%;
     font-family: 'Royale';
     color: white;
-
 }
 
 section{
@@ -190,4 +187,16 @@ select {
 option {
     background-color: #0c3351;
     color: white;
+}
+
+.elixir-input {
+    font-family: 'Royale';
+    border: 2px solid #0c3351;
+    border-radius: 8px;
+    padding: 8px 16px;
+    background-color: #4d739e;
+    color: white;
+    outline: none;
+    cursor: pointer;
+    appearance: none;
 }
