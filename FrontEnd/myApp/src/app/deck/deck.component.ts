@@ -86,7 +86,7 @@ export class DeckComponent {
   }
 
   addToDeck(card: Card): void {
-    if (this.deck.length < 8) {
+    if (this.deck.length < 8 && !this._deck.includes(card)){
         const index = this._cards.findIndex(c => c.id === card.id);
         if (index !== -1) {
             this._cards.splice(index, 1);
@@ -121,7 +121,7 @@ export class DeckComponent {
   moyenneElixir(): number {
     let sum = 0;
     this._deck.forEach(element => {
-      element.elixirCost ? sum += element.elixirCost : 0;
+      element.elixirCost != 0 ? sum += element.elixirCost : 0;
     });
     return sum == 0 ? 0 : parseFloat((sum / this._deck.length).toFixed(1));
   }
@@ -145,6 +145,7 @@ export class DeckComponent {
     this._cards.push(...this._deck);
     this._deck = [];
   
+    // fonction recursive parce que avec un while ca crash le browser et vs code, et avec un for ca laisse des slots vides dans le deck à cause des duplicats
     const addRandomCard = () => {
       if (this._deck.length < 8) {
         this.getRandomCard().subscribe({
@@ -156,7 +157,4 @@ export class DeckComponent {
   
     addRandomCard();
   }
-  
-  
-
 }
