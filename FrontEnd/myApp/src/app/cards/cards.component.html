@@ -1,5 +1,5 @@
 <div class="bg-image">
-    <section id="sorting" >
+    <section id="sorting">
         <section name="filter">
             <select name="type" (change)="onTypeChange($event)">
                 <option value="default" selected>Default</option>
@@ -15,42 +15,18 @@
             <option value="name">Name</option>
             <option value="elixir">Elixir</option>
             <option value="rarity">Rarity</option>
-        </select>        
+        </select>
     </section>
-    <section *ngIf="!elixir && (!type || type.toLowerCase() =='tower troop')">
-        <h2>Tower troops</h2>
-        <div class="cards-div">
-            <div class = "card-container" *ngFor="let card of getCardsByType('tower troop')">
-                <app-card [card]="card"></app-card>
-                <app-detail [card]="card"></app-detail>
+
+    <ng-container *ngFor="let cardType of ['tower troop', 'troop', 'building', 'spell']">
+        <section *ngIf="(!type || type.toLowerCase() == cardType) && getCardsByType(cardType).length != 0">
+            <h2>{{ cardType | titlecase }}s</h2>
+            <div class="cards-div">
+                <div class="card-container" *ngFor="let card of getCardsByType(cardType)">
+                    <app-card [card]="card"></app-card>
+                    <app-detail [card]="card"></app-detail>
+                </div>
             </div>
-        </div>
-    </section>
-    <section *ngIf="(!type || type.toLowerCase()=='troop') && getCardsByType('troop').length != 0">
-        <h2>Troops</h2>
-        <div class="cards-div">
-            <div class = "card-container" *ngFor="let card of getCardsByType('troop')">
-                <app-card [card]="card"></app-card>
-                <app-detail [card]="card"></app-detail>
-            </div>
-        </div>
-    </section>
-    <section *ngIf="(!type || type.toLowerCase() =='building') && getCardsByType('building').length != 0">
-        <h2>Buildings</h2>
-        <div class="cards-div">
-            <div class = "card-container" *ngFor="let card of getCardsByType('building')">
-                <app-card [card]="card"></app-card>
-                <app-detail [card]="card"></app-detail>
-            </div>
-        </div>
-    </section>
-    <section *ngIf="(!type || type.toLowerCase() =='spell') && getCardsByType('spell').length != 0">
-        <h2>Spells</h2>
-        <div class="cards-div">
-            <div class = "card-container" *ngFor="let card of getCardsByType('spell')">
-                <app-card [card]="card"></app-card>
-                <app-detail [card]="card"></app-detail>
-            </div>
-        </div>
-    </section>
+        </section>
+    </ng-container>
 </div>

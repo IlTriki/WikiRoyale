@@ -1,5 +1,4 @@
 <div class="bg-image">
-    
     <section>
         <h2>Deck</h2>
         <div class="deck">
@@ -25,26 +24,10 @@
             <option value="rarity">Rarity</option>
         </select>        
     </section>
-    <section>
-        <h2>Troops</h2>
+    <section *ngFor="let type of ['troop', 'building', 'spell']">
+        <h2>{{ type | titlecase }}s</h2>
         <div class="cards-div">
-            <div class = "card-container" *ngFor="let card of getCardsByType('troop')">
-                <app-card [card]="card" (click)="addToDeck(card)"></app-card>
-            </div>
-        </div>
-    </section>
-    <section>
-        <h2>Buildings</h2>
-        <div class="cards-div">
-            <div class = "card-container" *ngFor="let card of getCardsByType('building')">
-                <app-card [card]="card" (click)="addToDeck(card)"></app-card>
-            </div>
-        </div>
-    </section>
-    <section>
-        <h2>Spells</h2>
-        <div class="cards-div">
-            <div class = "card-container" *ngFor="let card of getCardsByType('spell')">
+            <div class = "card-container" *ngFor="let card of getCardsByType(type)">
                 <app-card [card]="card" (click)="addToDeck(card)"></app-card>
             </div>
         </div>

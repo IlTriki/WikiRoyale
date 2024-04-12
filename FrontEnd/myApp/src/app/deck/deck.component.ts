@@ -35,7 +35,7 @@ export class DeckComponent {
       next: (cards: Card[]) => this._cards = cards,
       error: (error: any) => console.error('Error fetching cards:', error)
     });
-  }  
+  }
 
   get cards(): Card[] {
     return this._cards;
@@ -86,6 +86,10 @@ export class DeckComponent {
   }
 
   addToDeck(card: Card): void {
+    // si la page est "/cards" la fonction ne fait rien
+    if (this._route.snapshot.routeConfig && this._route.snapshot.routeConfig.path === 'cards') {
+      return;
+    }
     if (this.deck.length < 8 && !this._deck.includes(card)){
         const index = this._cards.findIndex(c => c.id === card.id);
         if (index !== -1) {
